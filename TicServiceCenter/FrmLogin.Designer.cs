@@ -37,6 +37,7 @@
             this.panelUsuario = new System.Windows.Forms.Panel();
             this.panelContrasena = new System.Windows.Forms.Panel();
             this.btnIniciar = new System.Windows.Forms.Button();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogoTic)).BeginInit();
             this.panelLogoTic.SuspendLayout();
             this.SuspendLayout();
@@ -126,12 +127,27 @@
             this.btnIniciar.UseVisualStyleBackColor = false;
             this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel1.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(420, 277);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(127, 16);
+            this.linkLabel1.TabIndex = 9;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Cambiar Contraseña";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(71)))));
             this.ClientSize = new System.Drawing.Size(728, 302);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.panelContrasena);
             this.Controls.Add(this.panelUsuario);
@@ -144,6 +160,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FrmLogin";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.FrmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogoTic)).EndInit();
             this.panelLogoTic.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -160,6 +177,7 @@
         private System.Windows.Forms.Panel panelUsuario;
         private System.Windows.Forms.Panel panelContrasena;
         private System.Windows.Forms.Button btnIniciar;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 

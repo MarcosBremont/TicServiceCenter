@@ -11,11 +11,11 @@ using MySql.Data.MySqlClient;
 
 namespace TicServiceCenter
 {
-    public partial class PaginaPrincipal : Form
+    public partial class FrmFacturacion : Form
     {
         MySqlConnection con = new MySqlConnection("Server=localhost; database=TicServiceCenter; user=root; password=1234");
 
-        public PaginaPrincipal()
+        public FrmFacturacion()
         {
             InitializeComponent();
         }
@@ -25,5 +25,21 @@ namespace TicServiceCenter
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void verYEditarProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmInventario FrmI = new FrmInventario();
+            FrmI.Show();
+        }
+
+        private void editarInventarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmStock FrmS = new FrmStock();
+            FrmS.Show();
+        }
     }
 }

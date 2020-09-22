@@ -40,7 +40,7 @@ namespace TicServiceCenter
             dr = cmd.ExecuteReader();
             if (dr.Read())
             {
-                PaginaPrincipal form = new PaginaPrincipal();
+                FrmFacturacion form = new FrmFacturacion();
                 this.Hide();
                 form.Show();
             }
@@ -49,6 +49,19 @@ namespace TicServiceCenter
                 MessageBox.Show("Usuario o Contraseña Incorrectos");
             }
             con.Close();
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            FrmCambiarContraseña frm = new FrmCambiarContraseña();
+            frm.Show();
+         
         }
     }
 }

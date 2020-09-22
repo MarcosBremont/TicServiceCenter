@@ -92,5 +92,12 @@ namespace TicServiceCenter
 
             con.Close();
         }
+
+        private void btneditar_Click(object sender, EventArgs e)
+        {
+            FrmStock frms = new FrmStock();
+            frms.Show();
+            this.Close();
+        }
     }
 }
