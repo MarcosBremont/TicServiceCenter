@@ -124,6 +124,7 @@
             this.btnIniciar.TabIndex = 8;
             this.btnIniciar.Text = "Iniciar";
             this.btnIniciar.UseVisualStyleBackColor = false;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
             // FrmLogin
             // 
