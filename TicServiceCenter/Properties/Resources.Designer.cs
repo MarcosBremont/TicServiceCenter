@@ -63,6 +63,16 @@ namespace TicServiceCenter.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Copia_de_UNBLOG_MAS__removebg_preview__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Copia_de_UNBLOG_MAS.-removebg-preview (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logo_Transparente {
             get {
                 object obj = ResourceManager.GetObject("Logo-Transparente", resourceCulture);

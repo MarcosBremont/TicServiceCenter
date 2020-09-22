@@ -41,5 +41,28 @@ namespace TicServiceCenter
             FrmStock FrmS = new FrmStock();
             FrmS.Show();
         }
+
+        private void editarCategoriasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCategoria FrmC = new FrmCategoria();
+            FrmC.Show();
+        }
+
+        private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmAcercaDe FrmAc = new FrmAcercaDe();
+            FrmAc.Show();
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCliente FrmC = new FrmCliente();
+            FrmC.Show();
+        }
+
+        private void btneditar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -122,5 +122,77 @@ namespace TicServiceCenter
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void txtUsuario_Enter(object sender, EventArgs e)
+        {
+            if (txtUsuario.Text == "Usuario")
+            {
+                txtUsuario.Text = "";
+                txtUsuario.ForeColor = Color.White;
+            }
+        }
+
+        private void txtUsuario_Leave(object sender, EventArgs e)
+        {
+            if (txtUsuario.Text == "")
+            {
+                txtUsuario.Text = "Usuario";
+                txtUsuario.ForeColor = Color.White;
+            }
+        }
+
+        private void txtViejaContraseña_Enter(object sender, EventArgs e)
+        {
+            if (txtViejaContraseña.Text == "Contraseña Actual")
+            {
+                txtViejaContraseña.Text = "";
+                txtViejaContraseña.ForeColor = Color.White;
+            }
+        }
+
+        private void txtViejaContraseña_Leave(object sender, EventArgs e)
+        {
+            if (txtViejaContraseña.Text == "")
+            {
+                txtViejaContraseña.Text = "Contraseña Actual";
+                txtViejaContraseña.ForeColor = Color.White;
+            }
+        }
+
+        private void txtNuevaContraseña_Enter(object sender, EventArgs e)
+        {
+            if (txtNuevaContraseña.Text == "Nueva Contraseña")
+            {
+                txtNuevaContraseña.Text = "";
+                txtNuevaContraseña.ForeColor = Color.White;
+            }
+        }
+
+        private void txtNuevaContraseña_Leave(object sender, EventArgs e)
+        {
+            if (txtNuevaContraseña.Text == "")
+            {
+                txtNuevaContraseña.Text = "Nueva Contraseña";
+                txtNuevaContraseña.ForeColor = Color.White;
+            }
+        }
+
+        private void txtConfirmarContraseña_Enter(object sender, EventArgs e)
+        {
+            if (txtConfirmarContraseña.Text == "Confirmar Contraseña")
+            {
+                txtConfirmarContraseña.Text = "";
+                txtConfirmarContraseña.ForeColor = Color.White;
+            }
+        }
+
+        private void txtConfirmarContraseña_Leave(object sender, EventArgs e)
+        {
+            if (txtConfirmarContraseña.Text == "")
+            {
+                txtConfirmarContraseña.Text = "Confirmar Contraseña";
+                txtConfirmarContraseña.ForeColor = Color.White;
+            }
+        }
     }
 }

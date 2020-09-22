@@ -56,6 +56,8 @@
             this.txtUsuario.Size = new System.Drawing.Size(276, 16);
             this.txtUsuario.TabIndex = 18;
             this.txtUsuario.Text = "Usuario";
+            this.txtUsuario.Enter += new System.EventHandler(this.txtUsuario_Enter);
+            this.txtUsuario.Leave += new System.EventHandler(this.txtUsuario_Leave);
             // 
             // txtConfirmarContraseña
             // 
@@ -68,6 +70,8 @@
             this.txtConfirmarContraseña.Size = new System.Drawing.Size(276, 16);
             this.txtConfirmarContraseña.TabIndex = 23;
             this.txtConfirmarContraseña.Text = "Confirmar Contraseña";
+            this.txtConfirmarContraseña.Enter += new System.EventHandler(this.txtConfirmarContraseña_Enter);
+            this.txtConfirmarContraseña.Leave += new System.EventHandler(this.txtConfirmarContraseña_Leave);
             // 
             // txtNuevaContraseña
             // 
@@ -80,6 +84,8 @@
             this.txtNuevaContraseña.Size = new System.Drawing.Size(276, 16);
             this.txtNuevaContraseña.TabIndex = 22;
             this.txtNuevaContraseña.Text = "Nueva Contraseña";
+            this.txtNuevaContraseña.Enter += new System.EventHandler(this.txtNuevaContraseña_Enter);
+            this.txtNuevaContraseña.Leave += new System.EventHandler(this.txtNuevaContraseña_Leave);
             // 
             // txtViejaContraseña
             // 
@@ -92,6 +98,8 @@
             this.txtViejaContraseña.Size = new System.Drawing.Size(276, 16);
             this.txtViejaContraseña.TabIndex = 20;
             this.txtViejaContraseña.Text = "Contraseña Actual";
+            this.txtViejaContraseña.Enter += new System.EventHandler(this.txtViejaContraseña_Enter);
+            this.txtViejaContraseña.Leave += new System.EventHandler(this.txtViejaContraseña_Leave);
             // 
             // panelLogoTic
             // 

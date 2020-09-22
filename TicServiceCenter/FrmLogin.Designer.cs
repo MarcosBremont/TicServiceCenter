@@ -62,6 +62,8 @@
             this.txtUsuario.Size = new System.Drawing.Size(282, 16);
             this.txtUsuario.TabIndex = 2;
             this.txtUsuario.Text = "Usuario";
+            this.txtUsuario.Enter += new System.EventHandler(this.txtUsuario_Enter);
+            this.txtUsuario.Leave += new System.EventHandler(this.txtUsuario_Leave);
             // 
             // txtContraseña
             // 
@@ -73,6 +75,9 @@
             this.txtContraseña.Size = new System.Drawing.Size(282, 16);
             this.txtContraseña.TabIndex = 3;
             this.txtContraseña.Text = "Contraseña";
+            this.txtContraseña.Enter += new System.EventHandler(this.txtContraseña_Enter);
+            this.txtContraseña.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContraseña_KeyPress);
+            this.txtContraseña.Leave += new System.EventHandler(this.txtContraseña_Leave);
             // 
             // panelLogoTic
             // 
