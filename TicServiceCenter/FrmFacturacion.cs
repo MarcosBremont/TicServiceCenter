@@ -76,5 +76,12 @@ namespace TicServiceCenter
             Frml.Show();
             this.Close();
         }
+
+        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmRegistroDeUsuario FrmR = new FrmRegistroDeUsuario();
+            FrmR.Show();
+            this.Close();
+        }
     }
 }

@@ -28,118 +28,137 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnUpdate_record = new System.Windows.Forms.Button();
-            this.btnGetDetails = new System.Windows.Forms.Button();
-            this.btnNewRecord = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnRegister = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnCheckAvailability = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboRole = new System.Windows.Forms.ComboBox();
-            this.txtContact_no = new System.Windows.Forms.TextBox();
-            this.txtEmail_Address = new System.Windows.Forms.TextBox();
-            this.btnCheckAvailability = new System.Windows.Forms.Button();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.comboRoles = new System.Windows.Forms.ComboBox();
+            this.txtNumeroDeContacto = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtContrasena = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.dgvUsuariosRegistrados = new System.Windows.Forms.DataGridView();
+            this.TXTID = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lblfecha = new System.Windows.Forms.Label();
+            this.IDInventario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Contrasena = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NDeContacto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuariosRegistrados)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.btnUpdate_record);
-            this.panel1.Controls.Add(this.btnGetDetails);
-            this.panel1.Controls.Add(this.btnNewRecord);
-            this.panel1.Controls.Add(this.btnDelete);
-            this.panel1.Controls.Add(this.btnRegister);
-            this.panel1.Location = new System.Drawing.Point(12, 295);
+            this.panel1.Controls.Add(this.btnActualizar);
+            this.panel1.Controls.Add(this.btnNuevo);
+            this.panel1.Controls.Add(this.btnEliminar);
+            this.panel1.Controls.Add(this.btnGuardar);
+            this.panel1.Controls.Add(this.btnCheckAvailability);
+            this.panel1.Location = new System.Drawing.Point(12, 241);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(464, 61);
+            this.panel1.Size = new System.Drawing.Size(713, 61);
             this.panel1.TabIndex = 3;
             // 
-            // btnUpdate_record
+            // btnActualizar
             // 
-            this.btnUpdate_record.Enabled = false;
-            this.btnUpdate_record.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
-            this.btnUpdate_record.Location = new System.Drawing.Point(277, 13);
-            this.btnUpdate_record.Name = "btnUpdate_record";
-            this.btnUpdate_record.Size = new System.Drawing.Size(82, 31);
-            this.btnUpdate_record.TabIndex = 3;
-            this.btnUpdate_record.Text = "&Editar";
-            this.btnUpdate_record.UseVisualStyleBackColor = true;
+            this.btnActualizar.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
+            this.btnActualizar.Location = new System.Drawing.Point(466, 14);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(82, 31);
+            this.btnActualizar.TabIndex = 3;
+            this.btnActualizar.Text = "Editar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
             // 
-            // btnGetDetails
+            // btnNuevo
             // 
-            this.btnGetDetails.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
-            this.btnGetDetails.Location = new System.Drawing.Point(365, 13);
-            this.btnGetDetails.Name = "btnGetDetails";
-            this.btnGetDetails.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnGetDetails.Size = new System.Drawing.Size(82, 31);
-            this.btnGetDetails.TabIndex = 4;
-            this.btnGetDetails.Text = "&Registros";
-            this.btnGetDetails.UseVisualStyleBackColor = true;
+            this.btnNuevo.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
+            this.btnNuevo.Location = new System.Drawing.Point(202, 14);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(82, 31);
+            this.btnNuevo.TabIndex = 0;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
-            // btnNewRecord
+            // btnEliminar
             // 
-            this.btnNewRecord.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
-            this.btnNewRecord.Location = new System.Drawing.Point(13, 13);
-            this.btnNewRecord.Name = "btnNewRecord";
-            this.btnNewRecord.Size = new System.Drawing.Size(82, 31);
-            this.btnNewRecord.TabIndex = 0;
-            this.btnNewRecord.Text = "&Nuevo";
-            this.btnNewRecord.UseVisualStyleBackColor = true;
+            this.btnEliminar.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
+            this.btnEliminar.Location = new System.Drawing.Point(378, 14);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(82, 31);
+            this.btnEliminar.TabIndex = 2;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
             // 
-            // btnDelete
+            // btnGuardar
             // 
-            this.btnDelete.Enabled = false;
-            this.btnDelete.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
-            this.btnDelete.Location = new System.Drawing.Point(189, 13);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(82, 31);
-            this.btnDelete.TabIndex = 2;
-            this.btnDelete.Text = "&Eliminar";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnGuardar.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
+            this.btnGuardar.Location = new System.Drawing.Point(290, 14);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(82, 31);
+            this.btnGuardar.TabIndex = 1;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // btnRegister
+            // btnCheckAvailability
             // 
-            this.btnRegister.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
-            this.btnRegister.Location = new System.Drawing.Point(101, 13);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(82, 31);
-            this.btnRegister.TabIndex = 1;
-            this.btnRegister.Text = "&Registrar";
-            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnCheckAvailability.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
+            this.btnCheckAvailability.ForeColor = System.Drawing.Color.Black;
+            this.btnCheckAvailability.Location = new System.Drawing.Point(75, 14);
+            this.btnCheckAvailability.Name = "btnCheckAvailability";
+            this.btnCheckAvailability.Size = new System.Drawing.Size(121, 31);
+            this.btnCheckAvailability.TabIndex = 5;
+            this.btnCheckAvailability.Text = "Comprobar";
+            this.btnCheckAvailability.UseVisualStyleBackColor = true;
+            this.btnCheckAvailability.Click += new System.EventHandler(this.btnCheckAvailability_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.lblfecha);
+            this.groupBox1.Controls.Add(this.TXTID);
+            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.comboRole);
-            this.groupBox1.Controls.Add(this.txtContact_no);
-            this.groupBox1.Controls.Add(this.txtEmail_Address);
-            this.groupBox1.Controls.Add(this.btnCheckAvailability);
-            this.groupBox1.Controls.Add(this.txtName);
-            this.groupBox1.Controls.Add(this.txtPassword);
+            this.groupBox1.Controls.Add(this.comboRoles);
+            this.groupBox1.Controls.Add(this.txtNumeroDeContacto);
+            this.groupBox1.Controls.Add(this.txtEmail);
+            this.groupBox1.Controls.Add(this.txtNombre);
+            this.groupBox1.Controls.Add(this.txtContrasena);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txtUsername);
+            this.groupBox1.Controls.Add(this.txtUsuario);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(464, 266);
+            this.groupBox1.Size = new System.Drawing.Size(713, 223);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detalles de usuario";
@@ -148,69 +167,58 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
-            this.label1.Location = new System.Drawing.Point(20, 38);
+            this.label1.Location = new System.Drawing.Point(19, 71);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 16);
             this.label1.TabIndex = 20;
             this.label1.Text = "Roles";
             // 
-            // comboRole
+            // comboRoles
             // 
-            this.comboRole.FormattingEnabled = true;
-            this.comboRole.Items.AddRange(new object[] {
+            this.comboRoles.FormattingEnabled = true;
+            this.comboRoles.Items.AddRange(new object[] {
             "Admin",
             "Manager",
-            "Employee"});
-            this.comboRole.Location = new System.Drawing.Point(139, 36);
-            this.comboRole.Name = "comboRole";
-            this.comboRole.Size = new System.Drawing.Size(135, 24);
-            this.comboRole.TabIndex = 0;
+            "Empleado"});
+            this.comboRoles.Location = new System.Drawing.Point(138, 68);
+            this.comboRoles.Name = "comboRoles";
+            this.comboRoles.Size = new System.Drawing.Size(135, 24);
+            this.comboRoles.TabIndex = 0;
             // 
-            // txtContact_no
+            // txtNumeroDeContacto
             // 
-            this.txtContact_no.Location = new System.Drawing.Point(139, 187);
-            this.txtContact_no.Name = "txtContact_no";
-            this.txtContact_no.Size = new System.Drawing.Size(133, 23);
-            this.txtContact_no.TabIndex = 3;
+            this.txtNumeroDeContacto.Location = new System.Drawing.Point(445, 36);
+            this.txtNumeroDeContacto.Name = "txtNumeroDeContacto";
+            this.txtNumeroDeContacto.Size = new System.Drawing.Size(104, 23);
+            this.txtNumeroDeContacto.TabIndex = 3;
             // 
-            // txtEmail_Address
+            // txtEmail
             // 
-            this.txtEmail_Address.Location = new System.Drawing.Point(139, 226);
-            this.txtEmail_Address.Name = "txtEmail_Address";
-            this.txtEmail_Address.Size = new System.Drawing.Size(246, 23);
-            this.txtEmail_Address.TabIndex = 4;
+            this.txtEmail.Location = new System.Drawing.Point(445, 75);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(246, 23);
+            this.txtEmail.TabIndex = 4;
             // 
-            // btnCheckAvailability
+            // txtNombre
             // 
-            this.btnCheckAvailability.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
-            this.btnCheckAvailability.ForeColor = System.Drawing.Color.Black;
-            this.btnCheckAvailability.Location = new System.Drawing.Point(327, 34);
-            this.btnCheckAvailability.Name = "btnCheckAvailability";
-            this.btnCheckAvailability.Size = new System.Drawing.Size(121, 27);
-            this.btnCheckAvailability.TabIndex = 5;
-            this.btnCheckAvailability.Text = "Comprobar";
-            this.btnCheckAvailability.UseVisualStyleBackColor = true;
+            this.txtNombre.Location = new System.Drawing.Point(138, 174);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(246, 23);
+            this.txtNombre.TabIndex = 2;
             // 
-            // txtName
+            // txtContrasena
             // 
-            this.txtName.Location = new System.Drawing.Point(139, 148);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(246, 23);
-            this.txtName.TabIndex = 2;
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.Location = new System.Drawing.Point(139, 111);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(172, 23);
-            this.txtPassword.TabIndex = 1;
+            this.txtContrasena.Location = new System.Drawing.Point(138, 139);
+            this.txtContrasena.Name = "txtContrasena";
+            this.txtContrasena.PasswordChar = '*';
+            this.txtContrasena.Size = new System.Drawing.Size(172, 23);
+            this.txtContrasena.TabIndex = 1;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
-            this.label6.Location = new System.Drawing.Point(20, 232);
+            this.label6.Location = new System.Drawing.Point(326, 81);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(117, 16);
             this.label6.TabIndex = 18;
@@ -220,7 +228,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
-            this.label5.Location = new System.Drawing.Point(20, 187);
+            this.label5.Location = new System.Drawing.Point(326, 36);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(86, 16);
             this.label5.TabIndex = 17;
@@ -230,7 +238,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
-            this.label4.Location = new System.Drawing.Point(20, 148);
+            this.label4.Location = new System.Drawing.Point(19, 176);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 16);
             this.label4.TabIndex = 16;
@@ -240,41 +248,199 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
-            this.label3.Location = new System.Drawing.Point(20, 113);
+            this.label3.Location = new System.Drawing.Point(19, 141);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 16);
             this.label3.TabIndex = 15;
             this.label3.Text = "Contraseña";
             // 
-            // txtUsername
+            // txtUsuario
             // 
-            this.txtUsername.Location = new System.Drawing.Point(139, 74);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(172, 23);
-            this.txtUsername.TabIndex = 0;
+            this.txtUsuario.Location = new System.Drawing.Point(138, 104);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(172, 23);
+            this.txtUsuario.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
-            this.label2.Location = new System.Drawing.Point(20, 80);
+            this.label2.Location = new System.Drawing.Point(19, 106);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 16);
             this.label2.TabIndex = 13;
             this.label2.Text = "Usuario";
             // 
+            // dgvUsuariosRegistrados
+            // 
+            this.dgvUsuariosRegistrados.AllowUserToAddRows = false;
+            this.dgvUsuariosRegistrados.AllowUserToDeleteRows = false;
+            this.dgvUsuariosRegistrados.AllowUserToOrderColumns = true;
+            this.dgvUsuariosRegistrados.AllowUserToResizeColumns = false;
+            this.dgvUsuariosRegistrados.AllowUserToResizeRows = false;
+            this.dgvUsuariosRegistrados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvUsuariosRegistrados.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvUsuariosRegistrados.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvUsuariosRegistrados.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvUsuariosRegistrados.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(120)))), ((int)(((byte)(23)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUsuariosRegistrados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvUsuariosRegistrados.ColumnHeadersHeight = 40;
+            this.dgvUsuariosRegistrados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IDInventario,
+            this.Nombre,
+            this.Role,
+            this.Usuario,
+            this.Contrasena,
+            this.NDeContacto,
+            this.Email,
+            this.Fecha});
+            this.dgvUsuariosRegistrados.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(22)))), ((int)(((byte)(111)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvUsuariosRegistrados.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dgvUsuariosRegistrados.EnableHeadersVisualStyles = false;
+            this.dgvUsuariosRegistrados.GridColor = System.Drawing.SystemColors.Control;
+            this.dgvUsuariosRegistrados.Location = new System.Drawing.Point(12, 319);
+            this.dgvUsuariosRegistrados.MultiSelect = false;
+            this.dgvUsuariosRegistrados.Name = "dgvUsuariosRegistrados";
+            this.dgvUsuariosRegistrados.ReadOnly = true;
+            this.dgvUsuariosRegistrados.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUsuariosRegistrados.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.dgvUsuariosRegistrados.RowHeadersVisible = false;
+            this.dgvUsuariosRegistrados.RowHeadersWidth = 10;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Bahnschrift SemiLight", 10F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(22)))), ((int)(((byte)(111)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvUsuariosRegistrados.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            this.dgvUsuariosRegistrados.RowTemplate.Height = 30;
+            this.dgvUsuariosRegistrados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvUsuariosRegistrados.Size = new System.Drawing.Size(713, 231);
+            this.dgvUsuariosRegistrados.TabIndex = 80;
+            this.dgvUsuariosRegistrados.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsuariosRegistrados_CellClick);
+            // 
+            // TXTID
+            // 
+            this.TXTID.Location = new System.Drawing.Point(138, 33);
+            this.TXTID.Name = "TXTID";
+            this.TXTID.Size = new System.Drawing.Size(59, 23);
+            this.TXTID.TabIndex = 21;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
+            this.label7.Location = new System.Drawing.Point(19, 36);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(21, 16);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "ID";
+            // 
+            // lblfecha
+            // 
+            this.lblfecha.AutoSize = true;
+            this.lblfecha.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
+            this.lblfecha.Location = new System.Drawing.Point(573, 12);
+            this.lblfecha.Name = "lblfecha";
+            this.lblfecha.Size = new System.Drawing.Size(0, 16);
+            this.lblfecha.TabIndex = 23;
+            // 
+            // IDInventario
+            // 
+            this.IDInventario.DataPropertyName = "IDRegistroUsuario";
+            this.IDInventario.FillWeight = 49.55036F;
+            this.IDInventario.HeaderText = "Codigo";
+            this.IDInventario.Name = "IDInventario";
+            this.IDInventario.ReadOnly = true;
+            // 
+            // Nombre
+            // 
+            this.Nombre.DataPropertyName = "Nombre";
+            this.Nombre.FillWeight = 119.1544F;
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
+            // 
+            // Role
+            // 
+            this.Role.DataPropertyName = "Role";
+            this.Role.FillWeight = 106.4554F;
+            this.Role.HeaderText = "Rol";
+            this.Role.Name = "Role";
+            this.Role.ReadOnly = true;
+            // 
+            // Usuario
+            // 
+            this.Usuario.DataPropertyName = "Usuario";
+            this.Usuario.FillWeight = 106.4554F;
+            this.Usuario.HeaderText = "Usuario";
+            this.Usuario.Name = "Usuario";
+            this.Usuario.ReadOnly = true;
+            // 
+            // Contrasena
+            // 
+            this.Contrasena.DataPropertyName = "Contrasena";
+            this.Contrasena.FillWeight = 106.4554F;
+            this.Contrasena.HeaderText = "Contrasena";
+            this.Contrasena.Name = "Contrasena";
+            this.Contrasena.ReadOnly = true;
+            // 
+            // NDeContacto
+            // 
+            this.NDeContacto.DataPropertyName = "NDeContacto";
+            this.NDeContacto.HeaderText = "Telefono";
+            this.NDeContacto.Name = "NDeContacto";
+            this.NDeContacto.ReadOnly = true;
+            // 
+            // Email
+            // 
+            this.Email.DataPropertyName = "Email";
+            this.Email.HeaderText = "Email";
+            this.Email.Name = "Email";
+            this.Email.ReadOnly = true;
+            // 
+            // Fecha
+            // 
+            this.Fecha.DataPropertyName = "Fecha";
+            this.Fecha.HeaderText = "Fecha";
+            this.Fecha.Name = "Fecha";
+            this.Fecha.ReadOnly = true;
+            // 
             // FrmRegistroDeUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(486, 360);
+            this.ClientSize = new System.Drawing.Size(739, 562);
+            this.Controls.Add(this.dgvUsuariosRegistrados);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmRegistroDeUsuario";
-            this.Text = "FrmRegistroDeUsuario";
+            this.Text = "Registro De Usuarios";
+            this.Load += new System.EventHandler(this.FrmRegistroDeUsuario_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuariosRegistrados)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -282,24 +448,35 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnUpdate_record;
-        private System.Windows.Forms.Button btnGetDetails;
-        private System.Windows.Forms.Button btnNewRecord;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboRole;
-        private System.Windows.Forms.TextBox txtContact_no;
-        private System.Windows.Forms.TextBox txtEmail_Address;
+        private System.Windows.Forms.ComboBox comboRoles;
+        private System.Windows.Forms.TextBox txtNumeroDeContacto;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Button btnCheckAvailability;
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtContrasena;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView dgvUsuariosRegistrados;
+        private System.Windows.Forms.TextBox TXTID;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblfecha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IDInventario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Role;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Usuario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Contrasena;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NDeContacto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
     }
 }

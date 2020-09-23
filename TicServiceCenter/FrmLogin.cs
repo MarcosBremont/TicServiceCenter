@@ -82,8 +82,9 @@ namespace TicServiceCenter
                 if (myReader.Read() == true)
                 {
                     int i;
+                
                     ProgressBar1.Visible = true;
-                    ProgressBar1.Maximum = 5000;
+                    ProgressBar1.Maximum = 800;
                     ProgressBar1.Minimum = 0;
                     ProgressBar1.Value = 4;
                     ProgressBar1.Step = 1;
