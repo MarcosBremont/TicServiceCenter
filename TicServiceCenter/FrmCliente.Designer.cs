@@ -32,6 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCliente));
             this.txtCodigoPostal = new System.Windows.Forms.TextBox();
             this.GroupBox2 = new System.Windows.Forms.GroupBox();
             this.btnEliminar = new System.Windows.Forms.Button();
@@ -60,19 +61,25 @@
             this.Label4 = new System.Windows.Forms.Label();
             this.txtTelefono = new System.Windows.Forms.MaskedTextBox();
             this.txtNoCelular = new System.Windows.Forms.MaskedTextBox();
-            this.dgvStock = new System.Windows.Forms.DataGridView();
-            this.IDInventario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CategoriaProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvCliente = new System.Windows.Forms.DataGridView();
+            this.IDCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreCompleto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ciudad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Provincia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CodigoPostal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TELEFONO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CorreoElectronico = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NCelular = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Notas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtcantidaddeproductos = new System.Windows.Forms.TextBox();
             this.GroupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvStock)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
             this.SuspendLayout();
             // 
             // txtCodigoPostal
             // 
-            this.txtCodigoPostal.Location = new System.Drawing.Point(148, 223);
+            this.txtCodigoPostal.Location = new System.Drawing.Point(567, 51);
             this.txtCodigoPostal.Name = "txtCodigoPostal";
             this.txtCodigoPostal.Size = new System.Drawing.Size(100, 20);
             this.txtCodigoPostal.TabIndex = 83;
@@ -83,7 +90,7 @@
             this.GroupBox2.Controls.Add(this.btnActualizar);
             this.GroupBox2.Controls.Add(this.btnGuardar);
             this.GroupBox2.Controls.Add(this.btnNuevo);
-            this.GroupBox2.Location = new System.Drawing.Point(487, 31);
+            this.GroupBox2.Location = new System.Drawing.Point(1079, 15);
             this.GroupBox2.Name = "GroupBox2";
             this.GroupBox2.Size = new System.Drawing.Size(119, 174);
             this.GroupBox2.TabIndex = 89;
@@ -91,7 +98,6 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Enabled = false;
             this.btnEliminar.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
             this.btnEliminar.Location = new System.Drawing.Point(16, 124);
             this.btnEliminar.Name = "btnEliminar";
@@ -99,10 +105,10 @@
             this.btnEliminar.TabIndex = 3;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Enabled = false;
             this.btnActualizar.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
             this.btnActualizar.Location = new System.Drawing.Point(16, 89);
             this.btnActualizar.Name = "btnActualizar";
@@ -147,25 +153,25 @@
             // 
             // txtNotas
             // 
-            this.txtNotas.Location = new System.Drawing.Point(149, 368);
+            this.txtNotas.Location = new System.Drawing.Point(793, 12);
             this.txtNotas.Multiline = true;
             this.txtNotas.Name = "txtNotas";
             this.txtNotas.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtNotas.Size = new System.Drawing.Size(251, 67);
+            this.txtNotas.Size = new System.Drawing.Size(239, 67);
             this.txtNotas.TabIndex = 88;
             // 
             // txtCorreoElectronico
             // 
-            this.txtCorreoElectronico.Location = new System.Drawing.Point(149, 295);
+            this.txtCorreoElectronico.Location = new System.Drawing.Point(568, 123);
             this.txtCorreoElectronico.Name = "txtCorreoElectronico";
-            this.txtCorreoElectronico.Size = new System.Drawing.Size(226, 20);
+            this.txtCorreoElectronico.Size = new System.Drawing.Size(171, 20);
             this.txtCorreoElectronico.TabIndex = 85;
             // 
             // Label23
             // 
             this.Label23.AutoSize = true;
             this.Label23.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
-            this.Label23.Location = new System.Drawing.Point(25, 369);
+            this.Label23.Location = new System.Drawing.Point(745, 11);
             this.Label23.Name = "Label23";
             this.Label23.Size = new System.Drawing.Size(42, 16);
             this.Label23.TabIndex = 104;
@@ -175,17 +181,17 @@
             // 
             this.Label21.AutoSize = true;
             this.Label21.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
-            this.Label21.Location = new System.Drawing.Point(25, 333);
+            this.Label21.Location = new System.Drawing.Point(444, 161);
             this.Label21.Name = "Label21";
-            this.Label21.Size = new System.Drawing.Size(82, 16);
+            this.Label21.Size = new System.Drawing.Size(76, 16);
             this.Label21.TabIndex = 102;
-            this.Label21.Text = "*Nro Celular";
+            this.Label21.Text = "*No Celular";
             // 
             // Label20
             // 
             this.Label20.AutoSize = true;
             this.Label20.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
-            this.Label20.Location = new System.Drawing.Point(25, 296);
+            this.Label20.Location = new System.Drawing.Point(444, 124);
             this.Label20.Name = "Label20";
             this.Label20.Size = new System.Drawing.Size(117, 16);
             this.Label20.TabIndex = 101;
@@ -195,7 +201,7 @@
             // 
             this.Label19.AutoSize = true;
             this.Label19.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
-            this.Label19.Location = new System.Drawing.Point(25, 259);
+            this.Label19.Location = new System.Drawing.Point(444, 87);
             this.Label19.Name = "Label19";
             this.Label19.Size = new System.Drawing.Size(56, 16);
             this.Label19.TabIndex = 100;
@@ -215,7 +221,7 @@
             "N. eastern",
             "Nyanza",
             "Western"});
-            this.cmbprovincia.Location = new System.Drawing.Point(148, 184);
+            this.cmbprovincia.Location = new System.Drawing.Point(567, 12);
             this.cmbprovincia.Name = "cmbprovincia";
             this.cmbprovincia.Size = new System.Drawing.Size(172, 21);
             this.cmbprovincia.TabIndex = 82;
@@ -245,7 +251,7 @@
             // 
             this.Label9.AutoSize = true;
             this.Label9.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
-            this.Label9.Location = new System.Drawing.Point(25, 223);
+            this.Label9.Location = new System.Drawing.Point(444, 51);
             this.Label9.Name = "Label9";
             this.Label9.Size = new System.Drawing.Size(115, 16);
             this.Label9.TabIndex = 99;
@@ -255,7 +261,7 @@
             // 
             this.Label8.AutoSize = true;
             this.Label8.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
-            this.Label8.Location = new System.Drawing.Point(25, 188);
+            this.Label8.Location = new System.Drawing.Point(444, 16);
             this.Label8.Name = "Label8";
             this.Label8.Size = new System.Drawing.Size(68, 16);
             this.Label8.TabIndex = 98;
@@ -328,7 +334,7 @@
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(149, 259);
+            this.txtTelefono.Location = new System.Drawing.Point(568, 87);
             this.txtTelefono.Mask = "(999)000-0000";
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(100, 20);
@@ -336,24 +342,24 @@
             // 
             // txtNoCelular
             // 
-            this.txtNoCelular.Location = new System.Drawing.Point(149, 333);
+            this.txtNoCelular.Location = new System.Drawing.Point(568, 161);
             this.txtNoCelular.Mask = "000-000-0000";
             this.txtNoCelular.Name = "txtNoCelular";
             this.txtNoCelular.Size = new System.Drawing.Size(100, 20);
             this.txtNoCelular.TabIndex = 106;
             // 
-            // dgvStock
+            // dgvCliente
             // 
-            this.dgvStock.AllowUserToAddRows = false;
-            this.dgvStock.AllowUserToDeleteRows = false;
-            this.dgvStock.AllowUserToOrderColumns = true;
-            this.dgvStock.AllowUserToResizeColumns = false;
-            this.dgvStock.AllowUserToResizeRows = false;
-            this.dgvStock.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvStock.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dgvStock.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgvStock.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dgvStock.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvCliente.AllowUserToAddRows = false;
+            this.dgvCliente.AllowUserToDeleteRows = false;
+            this.dgvCliente.AllowUserToOrderColumns = true;
+            this.dgvCliente.AllowUserToResizeColumns = false;
+            this.dgvCliente.AllowUserToResizeRows = false;
+            this.dgvCliente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvCliente.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvCliente.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvCliente.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvCliente.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(120)))), ((int)(((byte)(23)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -361,15 +367,20 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvStock.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvStock.ColumnHeadersHeight = 40;
-            this.dgvStock.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IDInventario,
-            this.NombreProducto,
-            this.CategoriaProducto,
-            this.Descripcion,
-            this.Precio});
-            this.dgvStock.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dgvCliente.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvCliente.ColumnHeadersHeight = 40;
+            this.dgvCliente.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IDCliente,
+            this.NombreCompleto,
+            this.Direccion,
+            this.Ciudad,
+            this.Provincia,
+            this.CodigoPostal,
+            this.TELEFONO,
+            this.CorreoElectronico,
+            this.NCelular,
+            this.Notas});
+            this.dgvCliente.Cursor = System.Windows.Forms.Cursors.Hand;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -377,14 +388,14 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(22)))), ((int)(((byte)(111)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvStock.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvStock.EnableHeadersVisualStyles = false;
-            this.dgvStock.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvStock.Location = new System.Drawing.Point(465, 211);
-            this.dgvStock.MultiSelect = false;
-            this.dgvStock.Name = "dgvStock";
-            this.dgvStock.ReadOnly = true;
-            this.dgvStock.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvCliente.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvCliente.EnableHeadersVisualStyles = false;
+            this.dgvCliente.GridColor = System.Drawing.SystemColors.Control;
+            this.dgvCliente.Location = new System.Drawing.Point(12, 200);
+            this.dgvCliente.MultiSelect = false;
+            this.dgvCliente.Name = "dgvCliente";
+            this.dgvCliente.ReadOnly = true;
+            this.dgvCliente.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -392,66 +403,112 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvStock.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvStock.RowHeadersVisible = false;
-            this.dgvStock.RowHeadersWidth = 10;
+            this.dgvCliente.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvCliente.RowHeadersVisible = false;
+            this.dgvCliente.RowHeadersWidth = 10;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Bahnschrift SemiLight", 10F);
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(22)))), ((int)(((byte)(111)))));
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvStock.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvStock.RowTemplate.Height = 30;
-            this.dgvStock.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvStock.Size = new System.Drawing.Size(735, 248);
-            this.dgvStock.TabIndex = 107;
+            this.dgvCliente.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvCliente.RowTemplate.Height = 30;
+            this.dgvCliente.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvCliente.Size = new System.Drawing.Size(1188, 248);
+            this.dgvCliente.TabIndex = 107;
+            this.dgvCliente.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCliente_CellClick);
+            this.dgvCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCliente_CellContentClick);
             // 
-            // IDInventario
+            // IDCliente
             // 
-            this.IDInventario.DataPropertyName = "IDInventario";
-            this.IDInventario.FillWeight = 49.55036F;
-            this.IDInventario.HeaderText = "Codigo";
-            this.IDInventario.Name = "IDInventario";
-            this.IDInventario.ReadOnly = true;
+            this.IDCliente.DataPropertyName = "IDCliente";
+            this.IDCliente.FillWeight = 49.55036F;
+            this.IDCliente.HeaderText = "Codigo";
+            this.IDCliente.Name = "IDCliente";
+            this.IDCliente.ReadOnly = true;
             // 
-            // NombreProducto
+            // NombreCompleto
             // 
-            this.NombreProducto.DataPropertyName = "NombreProducto";
-            this.NombreProducto.FillWeight = 119.1544F;
-            this.NombreProducto.HeaderText = "Nombre del Producto";
-            this.NombreProducto.Name = "NombreProducto";
-            this.NombreProducto.ReadOnly = true;
+            this.NombreCompleto.DataPropertyName = "NombreCompleto";
+            this.NombreCompleto.FillWeight = 119.1544F;
+            this.NombreCompleto.HeaderText = "Nombre";
+            this.NombreCompleto.Name = "NombreCompleto";
+            this.NombreCompleto.ReadOnly = true;
             // 
-            // CategoriaProducto
+            // Direccion
             // 
-            this.CategoriaProducto.DataPropertyName = "CategoriaProducto";
-            this.CategoriaProducto.FillWeight = 106.4554F;
-            this.CategoriaProducto.HeaderText = "Categoria del Producto";
-            this.CategoriaProducto.Name = "CategoriaProducto";
-            this.CategoriaProducto.ReadOnly = true;
+            this.Direccion.DataPropertyName = "Direccion";
+            this.Direccion.FillWeight = 106.4554F;
+            this.Direccion.HeaderText = "Direccion";
+            this.Direccion.Name = "Direccion";
+            this.Direccion.ReadOnly = true;
             // 
-            // Descripcion
+            // Ciudad
             // 
-            this.Descripcion.DataPropertyName = "Descripcion";
-            this.Descripcion.FillWeight = 106.4554F;
-            this.Descripcion.HeaderText = "Descripcion";
-            this.Descripcion.Name = "Descripcion";
-            this.Descripcion.ReadOnly = true;
+            this.Ciudad.DataPropertyName = "Ciudad";
+            this.Ciudad.FillWeight = 106.4554F;
+            this.Ciudad.HeaderText = "Ciudad";
+            this.Ciudad.Name = "Ciudad";
+            this.Ciudad.ReadOnly = true;
             // 
-            // Precio
+            // Provincia
             // 
-            this.Precio.DataPropertyName = "Precio";
-            this.Precio.FillWeight = 106.4554F;
-            this.Precio.HeaderText = "Precio";
-            this.Precio.Name = "Precio";
-            this.Precio.ReadOnly = true;
+            this.Provincia.DataPropertyName = "Provincia";
+            this.Provincia.FillWeight = 106.4554F;
+            this.Provincia.HeaderText = "Provincia";
+            this.Provincia.Name = "Provincia";
+            this.Provincia.ReadOnly = true;
+            // 
+            // CodigoPostal
+            // 
+            this.CodigoPostal.DataPropertyName = "CodigoPostal";
+            this.CodigoPostal.HeaderText = "CodigoPostal";
+            this.CodigoPostal.Name = "CodigoPostal";
+            this.CodigoPostal.ReadOnly = true;
+            // 
+            // TELEFONO
+            // 
+            this.TELEFONO.DataPropertyName = "TELEFONO";
+            this.TELEFONO.HeaderText = "TELEFONO";
+            this.TELEFONO.Name = "TELEFONO";
+            this.TELEFONO.ReadOnly = true;
+            // 
+            // CorreoElectronico
+            // 
+            this.CorreoElectronico.DataPropertyName = "CorreoElectronico";
+            this.CorreoElectronico.HeaderText = "CorreoElectronico";
+            this.CorreoElectronico.Name = "CorreoElectronico";
+            this.CorreoElectronico.ReadOnly = true;
+            // 
+            // NCelular
+            // 
+            this.NCelular.DataPropertyName = "NCelular";
+            this.NCelular.HeaderText = "NCelular";
+            this.NCelular.Name = "NCelular";
+            this.NCelular.ReadOnly = true;
+            // 
+            // Notas
+            // 
+            this.Notas.DataPropertyName = "Notas";
+            this.Notas.HeaderText = "Notas";
+            this.Notas.Name = "Notas";
+            this.Notas.ReadOnly = true;
+            // 
+            // txtcantidaddeproductos
+            // 
+            this.txtcantidaddeproductos.Location = new System.Drawing.Point(12, 454);
+            this.txtcantidaddeproductos.Name = "txtcantidaddeproductos";
+            this.txtcantidaddeproductos.ReadOnly = true;
+            this.txtcantidaddeproductos.Size = new System.Drawing.Size(75, 20);
+            this.txtcantidaddeproductos.TabIndex = 4;
             // 
             // FrmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1212, 460);
-            this.Controls.Add(this.dgvStock);
+            this.ClientSize = new System.Drawing.Size(1212, 476);
+            this.Controls.Add(this.txtcantidaddeproductos);
+            this.Controls.Add(this.dgvCliente);
             this.Controls.Add(this.txtNoCelular);
             this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.txtCodigoPostal);
@@ -476,11 +533,12 @@
             this.Controls.Add(this.txtNombreCompleto);
             this.Controls.Add(this.txtIDCliente);
             this.Controls.Add(this.Label4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmCliente";
             this.Text = "Cliente";
             this.Load += new System.EventHandler(this.FrmCliente_Load);
             this.GroupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvStock)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -515,11 +573,17 @@
         internal System.Windows.Forms.Label Label4;
         private System.Windows.Forms.MaskedTextBox txtTelefono;
         private System.Windows.Forms.MaskedTextBox txtNoCelular;
-        private System.Windows.Forms.DataGridView dgvStock;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IDInventario;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NombreProducto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CategoriaProducto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
+        private System.Windows.Forms.DataGridView dgvCliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IDCliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreCompleto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Direccion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ciudad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Provincia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CodigoPostal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TELEFONO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CorreoElectronico;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NCelular;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Notas;
+        private System.Windows.Forms.TextBox txtcantidaddeproductos;
     }
 }

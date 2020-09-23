@@ -64,5 +64,17 @@ namespace TicServiceCenter
         {
 
         }
+
+        private void btneliminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmLogin Frml = new FrmLogin();
+            Frml.Show();
+            this.Close();
+        }
     }
 }
