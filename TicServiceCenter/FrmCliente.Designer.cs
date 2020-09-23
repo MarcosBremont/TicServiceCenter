@@ -225,6 +225,7 @@
             this.cmbprovincia.Name = "cmbprovincia";
             this.cmbprovincia.Size = new System.Drawing.Size(172, 21);
             this.cmbprovincia.TabIndex = 82;
+            this.cmbprovincia.Text = "Seleccione una provincia";
             // 
             // txtCiudad
             // 

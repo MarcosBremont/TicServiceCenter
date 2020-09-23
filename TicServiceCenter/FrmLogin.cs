@@ -16,7 +16,7 @@ namespace TicServiceCenter
         MySqlCommand cmd;
         MySqlDataReader dr;
 
-        MySqlConnection con = new MySqlConnection("Server=localhost; database=TicServiceCenter; user=root; password=1234");
+        String cs = ("Server=localhost; database=TicServiceCenter; user=root; password=1234");
 
 
         public FrmLogin()
@@ -31,24 +31,105 @@ namespace TicServiceCenter
 
         public void Ingresar()
         {
-            string Usuario = txtUsuario.Text;
-            string Contrasena = txtContraseña.Text;
-            cmd = new MySqlCommand();
-            con.Open();
-            cmd.Connection = con;
-            cmd.CommandText = "SELECT * FROM Usuario where Usuario='" + txtUsuario.Text + "' AND Contrasena='" + txtContraseña.Text + "'";
-            dr = cmd.ExecuteReader();
-            if (dr.Read())
+            if (cbRol.Text == "")
             {
-                FrmFacturacion form = new FrmFacturacion();
-                this.Hide();
-                form.Show();
+                MessageBox.Show("Por favor seleccione un Rol", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                cbRol.Focus();
+                return;
             }
-            else
+
+
+            if (txtUsuario.Text == "")
             {
-                MessageBox.Show("Usuario o Contraseña Incorrectos");
+                MessageBox.Show("Please enter user name", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtUsuario.Focus();
+                return;
             }
-            con.Close();
+            if (txtContraseña.Text == "")
+            {
+                MessageBox.Show("Please enter password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtContraseña.Focus();
+                return;
+            }
+
+
+            try
+            {
+                MySqlConnection myConnection = default(MySqlConnection);
+                myConnection = new MySqlConnection(cs);
+
+                MySqlCommand myCommand = default(MySqlCommand);
+
+                myCommand = new MySqlCommand("SELECT Role, Usuario,Contrasena FROM RegistroUsuario WHERE Role = @Role AND Usuario = @Usuario AND Contrasena = @Contrasena", myConnection);
+                MySqlParameter uRole = new MySqlParameter("@Role", MySqlDbType.VarChar);
+                MySqlParameter uName = new MySqlParameter("@Usuario", MySqlDbType.VarChar);
+                MySqlParameter uPassword = new MySqlParameter("@Contrasena", MySqlDbType.VarChar);
+
+                uRole.Value = cbRol.Text;
+                uName.Value = txtUsuario.Text;
+                uPassword.Value = txtContraseña.Text;
+                myCommand.Parameters.Add(uRole);
+                myCommand.Parameters.Add(uName);
+                myCommand.Parameters.Add(uPassword);
+
+
+                myCommand.Connection.Open();
+
+                MySqlDataReader myReader = myCommand.ExecuteReader(CommandBehavior.CloseConnection);
+
+
+                #region
+                if (myReader.Read() == true)
+                {
+                    int i;
+                    ProgressBar1.Visible = true;
+                    ProgressBar1.Maximum = 5000;
+                    ProgressBar1.Minimum = 0;
+                    ProgressBar1.Value = 4;
+                    ProgressBar1.Step = 1;
+
+                    for (i = 0; i <= 5000; i++)
+                    {
+                        ProgressBar1.PerformStep();
+                    }
+
+                    this.Hide();
+                    FrmFacturacion frm = new FrmFacturacion();
+                    //Logged in as (Role)
+                    frm.Show();
+                 
+
+                }
+
+
+
+                #endregion
+
+
+                else
+                {
+
+                    MessageBox.Show("El inicio de sesion fallo, por favor verifique los datos correctamente!", "Inicio de sesion fallido", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    txtUsuario.Clear();
+                    txtContraseña.Clear();
+
+                    cbRol.Enabled = true;
+                    cbRol.Focus();
+
+                }
+                if (myConnection.State == ConnectionState.Open)
+                {
+                    myConnection.Dispose();
+                }
+
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void FrmLogin_Load(object sender, EventArgs e)
@@ -109,6 +190,14 @@ namespace TicServiceCenter
             {
                 Ingresar();
             }
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            FrmRecuperarContrasena frm = new FrmRecuperarContrasena();
+            frm.txtEmail.Focus();
+            frm.Show();
         }
     }
 }

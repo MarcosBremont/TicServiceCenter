@@ -37,6 +37,7 @@ namespace TicServiceCenter
             txtReferencia.Clear();
             txtTelefono.Clear();
             
+            
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -44,7 +45,8 @@ namespace TicServiceCenter
             Insertar();
             CargarDgvCliente();
             Clear();
-          
+            this.txtcantidaddeproductos.Text = this.dgvCliente.Rows.Count.ToString("N0");
+
         }
 
         public void Insertar()
@@ -113,6 +115,7 @@ namespace TicServiceCenter
             comando.Parameters.AddWithValue("@Notas", txtNotas.Text);
             comando.ExecuteNonQuery();
             MessageBox.Show("Cliente Actualizado");
+            CargarDgvCliente();
             con.Close();
             Clear();
         }

@@ -98,6 +98,12 @@
     <Compile Include="FrmFacturacion.Designer.cs">
       <DependentUpon>FrmFacturacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmRecuperarContrasena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRecuperarContrasena.Designer.cs">
+      <DependentUpon>FrmRecuperarContrasena.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmRegistroDeUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFacturacion.resx">
       <DependentUpon>FrmFacturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRecuperarContrasena.resx">
+      <DependentUpon>FrmRecuperarContrasena.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistroDeUsuario.resx">
       <DependentUpon>FrmRegistroDeUsuario.cs</DependentUpon>

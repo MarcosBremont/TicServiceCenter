@@ -164,6 +164,7 @@
             this.btnOk.TabIndex = 80;
             this.btnOk.Text = "Ok";
             this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // FrmAcercaDe
             // 
