@@ -94,6 +94,7 @@ namespace TicServiceCenter
             comando.Parameters.AddWithValue("@Email", txtEmail.Text);
             comando.ExecuteNonQuery();
             con.Close();
+            CargarDgvUsuariosRegistrados();
             MessageBox.Show("Usuario Agregado exitosamente");
          
             clear();
@@ -129,6 +130,48 @@ namespace TicServiceCenter
             txtNumeroDeContacto.Text = dgvUsuariosRegistrados.CurrentRow.Cells[5].Value.ToString();
             txtEmail.Text = dgvUsuariosRegistrados.CurrentRow.Cells[6].Value.ToString();
             lblfecha.Text = dgvUsuariosRegistrados.CurrentRow.Cells[7].Value.ToString();
+
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            string query = "UPDATE registrousuario SET Nombre = @Nombre, Role = @Role, Usuario = @Usuario, Contrasena = @Contrasena, NDeContacto = @NDeContacto, Email = @Email where IDRegistroUsuario=@IDRegistroUsuario";
+            MySqlCommand comando = new MySqlCommand(query, con);
+            comando.Parameters.AddWithValue("@IDRegistroUsuario", TXTID.Text);
+            comando.Parameters.AddWithValue("@Nombre", txtNombre.Text);
+            comando.Parameters.AddWithValue("@Role", comboRoles.Text);
+            comando.Parameters.AddWithValue("@Usuario", txtUsuario.Text);
+            comando.Parameters.AddWithValue("@Contrasena", txtContrasena.Text);
+            comando.Parameters.AddWithValue("@NDeContacto", txtNumeroDeContacto.Text);
+            comando.Parameters.AddWithValue("@Email", txtEmail.Text);
+            comando.ExecuteNonQuery();
+            CargarDgvUsuariosRegistrados();
+            MessageBox.Show("Usuario Actualizado");
+            con.Close();
+            clear();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            DialogResult result = MessageBox.Show("¿Estas seguro que quiere eliminar este Usuario?.", "ATENCION", MessageBoxButtons.YesNo);
+
+            if (result == DialogResult.Yes)
+            {
+                string query = "DELETE FROM registrousuario Where IDRegistroUsuario = @IDRegistroUsuario";
+                MySqlCommand comando = new MySqlCommand(query, con);
+                comando.Parameters.AddWithValue("@IDRegistroUsuario", TXTID.Text);
+                comando.ExecuteNonQuery();
+                CargarDgvUsuariosRegistrados();
+                MessageBox.Show("Usuario Eliminado");
+                con.Close();
+                clear();
+            }
+            else
+            {
+
+            }
 
         }
     }

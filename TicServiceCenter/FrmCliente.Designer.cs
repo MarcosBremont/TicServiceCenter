@@ -60,8 +60,15 @@
             this.txtIDCliente = new System.Windows.Forms.TextBox();
             this.Label4 = new System.Windows.Forms.Label();
             this.txtTelefono = new System.Windows.Forms.MaskedTextBox();
-            this.txtNoCelular = new System.Windows.Forms.MaskedTextBox();
             this.dgvCliente = new System.Windows.Forms.DataGridView();
+            this.txtcantidaddeproductos = new System.Windows.Forms.TextBox();
+            this.txtNoCelular = new System.Windows.Forms.MaskedTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.IDCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreCompleto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,7 +79,6 @@
             this.CorreoElectronico = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NCelular = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Notas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtcantidaddeproductos = new System.Windows.Forms.TextBox();
             this.GroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
             this.SuspendLayout();
@@ -183,9 +189,9 @@
             this.Label21.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
             this.Label21.Location = new System.Drawing.Point(444, 161);
             this.Label21.Name = "Label21";
-            this.Label21.Size = new System.Drawing.Size(76, 16);
+            this.Label21.Size = new System.Drawing.Size(70, 16);
             this.Label21.TabIndex = 102;
-            this.Label21.Text = "*No Celular";
+            this.Label21.Text = "No Celular";
             // 
             // Label20
             // 
@@ -229,7 +235,7 @@
             // 
             // txtCiudad
             // 
-            this.txtCiudad.Location = new System.Drawing.Point(148, 151);
+            this.txtCiudad.Location = new System.Drawing.Point(148, 153);
             this.txtCiudad.Name = "txtCiudad";
             this.txtCiudad.Size = new System.Drawing.Size(144, 20);
             this.txtCiudad.TabIndex = 81;
@@ -243,7 +249,7 @@
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(148, 84);
+            this.txtDireccion.Location = new System.Drawing.Point(148, 87);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(273, 20);
             this.txtDireccion.TabIndex = 79;
@@ -254,9 +260,9 @@
             this.Label9.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
             this.Label9.Location = new System.Drawing.Point(444, 51);
             this.Label9.Name = "Label9";
-            this.Label9.Size = new System.Drawing.Size(115, 16);
+            this.Label9.Size = new System.Drawing.Size(109, 16);
             this.Label9.TabIndex = 99;
-            this.Label9.Text = "*Zip/Código Postal";
+            this.Label9.Text = "Zip/Código Postal";
             // 
             // Label8
             // 
@@ -264,9 +270,9 @@
             this.Label8.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
             this.Label8.Location = new System.Drawing.Point(444, 16);
             this.Label8.Name = "Label8";
-            this.Label8.Size = new System.Drawing.Size(68, 16);
+            this.Label8.Size = new System.Drawing.Size(62, 16);
             this.Label8.TabIndex = 98;
-            this.Label8.Text = "*Provincia";
+            this.Label8.Text = "Provincia";
             // 
             // Label7
             // 
@@ -282,35 +288,35 @@
             // 
             this.Label6.AutoSize = true;
             this.Label6.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
-            this.Label6.Location = new System.Drawing.Point(25, 154);
+            this.Label6.Location = new System.Drawing.Point(25, 155);
             this.Label6.Name = "Label6";
-            this.Label6.Size = new System.Drawing.Size(53, 16);
+            this.Label6.Size = new System.Drawing.Size(47, 16);
             this.Label6.TabIndex = 96;
-            this.Label6.Text = "*Ciudad";
+            this.Label6.Text = "Ciudad";
             // 
             // Label5
             // 
             this.Label5.AutoSize = true;
             this.Label5.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
-            this.Label5.Location = new System.Drawing.Point(25, 87);
+            this.Label5.Location = new System.Drawing.Point(25, 89);
             this.Label5.Name = "Label5";
-            this.Label5.Size = new System.Drawing.Size(68, 16);
+            this.Label5.Size = new System.Drawing.Size(62, 16);
             this.Label5.TabIndex = 95;
-            this.Label5.Text = "*Direccion";
+            this.Label5.Text = "Direccion";
             // 
             // Label2
             // 
             this.Label2.AutoSize = true;
             this.Label2.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
-            this.Label2.Location = new System.Drawing.Point(25, 52);
+            this.Label2.Location = new System.Drawing.Point(25, 54);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(61, 16);
+            this.Label2.Size = new System.Drawing.Size(55, 16);
             this.Label2.TabIndex = 94;
-            this.Label2.Text = "*Nombre";
+            this.Label2.Text = "Nombre";
             // 
             // txtNombreCompleto
             // 
-            this.txtNombreCompleto.Location = new System.Drawing.Point(148, 51);
+            this.txtNombreCompleto.Location = new System.Drawing.Point(148, 52);
             this.txtNombreCompleto.Name = "txtNombreCompleto";
             this.txtNombreCompleto.Size = new System.Drawing.Size(273, 20);
             this.txtNombreCompleto.TabIndex = 78;
@@ -320,7 +326,7 @@
             this.txtIDCliente.Location = new System.Drawing.Point(149, 17);
             this.txtIDCliente.Name = "txtIDCliente";
             this.txtIDCliente.ReadOnly = true;
-            this.txtIDCliente.Size = new System.Drawing.Size(118, 20);
+            this.txtIDCliente.Size = new System.Drawing.Size(43, 20);
             this.txtIDCliente.TabIndex = 91;
             // 
             // Label4
@@ -340,14 +346,6 @@
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(100, 20);
             this.txtTelefono.TabIndex = 105;
-            // 
-            // txtNoCelular
-            // 
-            this.txtNoCelular.Location = new System.Drawing.Point(568, 161);
-            this.txtNoCelular.Mask = "000-000-0000";
-            this.txtNoCelular.Name = "txtNoCelular";
-            this.txtNoCelular.Size = new System.Drawing.Size(100, 20);
-            this.txtNoCelular.TabIndex = 106;
             // 
             // dgvCliente
             // 
@@ -420,6 +418,94 @@
             this.dgvCliente.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCliente_CellClick);
             this.dgvCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCliente_CellContentClick);
             // 
+            // txtcantidaddeproductos
+            // 
+            this.txtcantidaddeproductos.Location = new System.Drawing.Point(12, 454);
+            this.txtcantidaddeproductos.Name = "txtcantidaddeproductos";
+            this.txtcantidaddeproductos.ReadOnly = true;
+            this.txtcantidaddeproductos.Size = new System.Drawing.Size(75, 20);
+            this.txtcantidaddeproductos.TabIndex = 4;
+            // 
+            // txtNoCelular
+            // 
+            this.txtNoCelular.Location = new System.Drawing.Point(567, 160);
+            this.txtNoCelular.Mask = "(999)000-0000";
+            this.txtNoCelular.Name = "txtNoCelular";
+            this.txtNoCelular.Size = new System.Drawing.Size(100, 20);
+            this.txtNoCelular.TabIndex = 108;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(12, 53);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(16, 19);
+            this.label1.TabIndex = 109;
+            this.label1.Text = "*";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(12, 88);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(16, 19);
+            this.label3.TabIndex = 110;
+            this.label3.Text = "*";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Red;
+            this.label10.Location = new System.Drawing.Point(12, 154);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(16, 19);
+            this.label10.TabIndex = 111;
+            this.label10.Text = "*";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Red;
+            this.label12.Location = new System.Drawing.Point(429, 162);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(16, 19);
+            this.label12.TabIndex = 114;
+            this.label12.Text = "*";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Red;
+            this.label13.Location = new System.Drawing.Point(429, 52);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(16, 19);
+            this.label13.TabIndex = 113;
+            this.label13.Text = "*";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Red;
+            this.label14.Location = new System.Drawing.Point(429, 17);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(16, 19);
+            this.label14.TabIndex = 112;
+            this.label14.Text = "*";
+            // 
             // IDCliente
             // 
             this.IDCliente.DataPropertyName = "IDCliente";
@@ -463,28 +549,28 @@
             // CodigoPostal
             // 
             this.CodigoPostal.DataPropertyName = "CodigoPostal";
-            this.CodigoPostal.HeaderText = "CodigoPostal";
+            this.CodigoPostal.HeaderText = "Codigo Postal";
             this.CodigoPostal.Name = "CodigoPostal";
             this.CodigoPostal.ReadOnly = true;
             // 
             // TELEFONO
             // 
             this.TELEFONO.DataPropertyName = "TELEFONO";
-            this.TELEFONO.HeaderText = "TELEFONO";
+            this.TELEFONO.HeaderText = "Telefono";
             this.TELEFONO.Name = "TELEFONO";
             this.TELEFONO.ReadOnly = true;
             // 
             // CorreoElectronico
             // 
             this.CorreoElectronico.DataPropertyName = "CorreoElectronico";
-            this.CorreoElectronico.HeaderText = "CorreoElectronico";
+            this.CorreoElectronico.HeaderText = "Email";
             this.CorreoElectronico.Name = "CorreoElectronico";
             this.CorreoElectronico.ReadOnly = true;
             // 
             // NCelular
             // 
             this.NCelular.DataPropertyName = "NCelular";
-            this.NCelular.HeaderText = "NCelular";
+            this.NCelular.HeaderText = "Celular";
             this.NCelular.Name = "NCelular";
             this.NCelular.ReadOnly = true;
             // 
@@ -495,22 +581,20 @@
             this.Notas.Name = "Notas";
             this.Notas.ReadOnly = true;
             // 
-            // txtcantidaddeproductos
-            // 
-            this.txtcantidaddeproductos.Location = new System.Drawing.Point(12, 454);
-            this.txtcantidaddeproductos.Name = "txtcantidaddeproductos";
-            this.txtcantidaddeproductos.ReadOnly = true;
-            this.txtcantidaddeproductos.Size = new System.Drawing.Size(75, 20);
-            this.txtcantidaddeproductos.TabIndex = 4;
-            // 
             // FrmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1212, 476);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtNoCelular);
             this.Controls.Add(this.txtcantidaddeproductos);
             this.Controls.Add(this.dgvCliente);
-            this.Controls.Add(this.txtNoCelular);
             this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.txtCodigoPostal);
             this.Controls.Add(this.GroupBox2);
@@ -573,8 +657,8 @@
         internal System.Windows.Forms.TextBox txtIDCliente;
         internal System.Windows.Forms.Label Label4;
         private System.Windows.Forms.MaskedTextBox txtTelefono;
-        private System.Windows.Forms.MaskedTextBox txtNoCelular;
         private System.Windows.Forms.DataGridView dgvCliente;
+        private System.Windows.Forms.TextBox txtcantidaddeproductos;
         private System.Windows.Forms.DataGridViewTextBoxColumn IDCliente;
         private System.Windows.Forms.DataGridViewTextBoxColumn NombreCompleto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Direccion;
@@ -585,6 +669,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn CorreoElectronico;
         private System.Windows.Forms.DataGridViewTextBoxColumn NCelular;
         private System.Windows.Forms.DataGridViewTextBoxColumn Notas;
-        private System.Windows.Forms.TextBox txtcantidaddeproductos;
+        private System.Windows.Forms.MaskedTextBox txtNoCelular;
+        internal System.Windows.Forms.Label label1;
+        internal System.Windows.Forms.Label label3;
+        internal System.Windows.Forms.Label label10;
+        internal System.Windows.Forms.Label label12;
+        internal System.Windows.Forms.Label label13;
+        internal System.Windows.Forms.Label label14;
     }
 }

@@ -98,8 +98,11 @@ namespace TicServiceCenter
                     FrmFacturacion frm = new FrmFacturacion();
                     //Logged in as (Role)
                     frm.Show();
-                 
+                    frm.lbluser.Text = cbRol.Text;
 
+                    if (cbRol.SelectedItem == "Empleado") frm.usuariosToolStripMenuItem.Visible = false;
+
+                    
                 }
 
 
@@ -135,7 +138,7 @@ namespace TicServiceCenter
 
         private void FrmLogin_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

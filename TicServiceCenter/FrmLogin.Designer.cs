@@ -61,7 +61,7 @@
             this.txtUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(71)))));
             this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsuario.ForeColor = System.Drawing.Color.White;
-            this.txtUsuario.Location = new System.Drawing.Point(344, 106);
+            this.txtUsuario.Location = new System.Drawing.Point(342, 134);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(282, 16);
             this.txtUsuario.TabIndex = 2;
@@ -74,7 +74,7 @@
             this.txtContraseña.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(71)))));
             this.txtContraseña.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtContraseña.ForeColor = System.Drawing.Color.White;
-            this.txtContraseña.Location = new System.Drawing.Point(344, 175);
+            this.txtContraseña.Location = new System.Drawing.Point(342, 203);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(282, 16);
             this.txtContraseña.TabIndex = 3;
@@ -89,7 +89,7 @@
             this.panelLogoTic.Controls.Add(this.pictureBoxLogoTic);
             this.panelLogoTic.Location = new System.Drawing.Point(-1, -2);
             this.panelLogoTic.Name = "panelLogoTic";
-            this.panelLogoTic.Size = new System.Drawing.Size(249, 373);
+            this.panelLogoTic.Size = new System.Drawing.Size(249, 413);
             this.panelLogoTic.TabIndex = 4;
             // 
             // lblLogin
@@ -106,7 +106,7 @@
             // panelUsuario
             // 
             this.panelUsuario.BackColor = System.Drawing.Color.White;
-            this.panelUsuario.Location = new System.Drawing.Point(344, 128);
+            this.panelUsuario.Location = new System.Drawing.Point(342, 156);
             this.panelUsuario.Name = "panelUsuario";
             this.panelUsuario.Size = new System.Drawing.Size(287, 4);
             this.panelUsuario.TabIndex = 6;
@@ -114,7 +114,7 @@
             // panelContrasena
             // 
             this.panelContrasena.BackColor = System.Drawing.Color.White;
-            this.panelContrasena.Location = new System.Drawing.Point(344, 194);
+            this.panelContrasena.Location = new System.Drawing.Point(342, 222);
             this.panelContrasena.Name = "panelContrasena";
             this.panelContrasena.Size = new System.Drawing.Size(287, 4);
             this.panelContrasena.TabIndex = 7;
@@ -128,7 +128,7 @@
             this.btnIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIniciar.Font = new System.Drawing.Font("Bahnschrift", 12F);
             this.btnIniciar.ForeColor = System.Drawing.Color.White;
-            this.btnIniciar.Location = new System.Drawing.Point(344, 252);
+            this.btnIniciar.Location = new System.Drawing.Point(344, 280);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(287, 42);
             this.btnIniciar.TabIndex = 8;
@@ -142,7 +142,7 @@
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(342, 315);
+            this.linkLabel1.Location = new System.Drawing.Point(342, 343);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(127, 16);
             this.linkLabel1.TabIndex = 9;
@@ -152,12 +152,12 @@
             // 
             // cbRol
             // 
+            this.cbRol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbRol.FormattingEnabled = true;
             this.cbRol.Items.AddRange(new object[] {
             "Admin",
-            "Manager",
             "Empleado"});
-            this.cbRol.Location = new System.Drawing.Point(464, 57);
+            this.cbRol.Location = new System.Drawing.Point(464, 85);
             this.cbRol.Name = "cbRol";
             this.cbRol.Size = new System.Drawing.Size(167, 24);
             this.cbRol.TabIndex = 24;
@@ -166,7 +166,7 @@
             // 
             this.label2.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(342, 57);
+            this.label2.Location = new System.Drawing.Point(342, 85);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(115, 23);
             this.label2.TabIndex = 25;
@@ -179,7 +179,7 @@
             this.linkLabel3.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel3.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.linkLabel3.LinkColor = System.Drawing.Color.White;
-            this.linkLabel3.Location = new System.Drawing.Point(492, 315);
+            this.linkLabel3.Location = new System.Drawing.Point(492, 343);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(139, 16);
             this.linkLabel3.TabIndex = 26;
@@ -189,7 +189,7 @@
             // 
             // ProgressBar1
             // 
-            this.ProgressBar1.Location = new System.Drawing.Point(362, 228);
+            this.ProgressBar1.Location = new System.Drawing.Point(362, 256);
             this.ProgressBar1.Name = "ProgressBar1";
             this.ProgressBar1.Size = new System.Drawing.Size(247, 10);
             this.ProgressBar1.TabIndex = 60;
@@ -200,7 +200,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(71)))));
-            this.ClientSize = new System.Drawing.Size(728, 356);
+            this.ClientSize = new System.Drawing.Size(728, 404);
             this.Controls.Add(this.ProgressBar1);
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.cbRol);
@@ -217,6 +217,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FrmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogoTic)).EndInit();

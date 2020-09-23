@@ -35,9 +35,9 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtCategoria = new System.Windows.Forms.TextBox();
-            this.CMBCategorias = new System.Windows.Forms.ComboBox();
             this.lblidcategoria = new System.Windows.Forms.Label();
+            this.CMBCategorias = new System.Windows.Forms.ComboBox();
+            this.txtCategoria = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -49,7 +49,8 @@
             this.panel1.Controls.Add(this.btnEliminar);
             this.panel1.Controls.Add(this.btnGuardar);
             this.panel1.Controls.Add(this.btnNuevo);
-            this.panel1.Location = new System.Drawing.Point(77, 149);
+            this.panel1.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
+            this.panel1.Location = new System.Drawing.Point(82, 139);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(396, 62);
             this.panel1.TabIndex = 7;
@@ -58,7 +59,7 @@
             // 
             this.btnActualizar.Location = new System.Drawing.Point(277, 14);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(68, 32);
+            this.btnActualizar.Size = new System.Drawing.Size(81, 32);
             this.btnActualizar.TabIndex = 3;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
@@ -99,7 +100,8 @@
             this.groupBox1.Controls.Add(this.lblidcategoria);
             this.groupBox1.Controls.Add(this.CMBCategorias);
             this.groupBox1.Controls.Add(this.txtCategoria);
-            this.groupBox1.Location = new System.Drawing.Point(77, 50);
+            this.groupBox1.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
+            this.groupBox1.Location = new System.Drawing.Point(82, 40);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -108,40 +110,41 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Categoria";
             // 
-            // txtCategoria
+            // lblidcategoria
             // 
-            this.txtCategoria.Location = new System.Drawing.Point(89, 20);
-            this.txtCategoria.Name = "txtCategoria";
-            this.txtCategoria.Size = new System.Drawing.Size(270, 20);
-            this.txtCategoria.TabIndex = 0;
+            this.lblidcategoria.AutoSize = true;
+            this.lblidcategoria.Location = new System.Drawing.Point(46, 25);
+            this.lblidcategoria.Name = "lblidcategoria";
+            this.lblidcategoria.Size = new System.Drawing.Size(21, 16);
+            this.lblidcategoria.TabIndex = 2;
+            this.lblidcategoria.Text = "ID";
             // 
             // CMBCategorias
             // 
             this.CMBCategorias.FormattingEnabled = true;
             this.CMBCategorias.Location = new System.Drawing.Point(45, 53);
             this.CMBCategorias.Name = "CMBCategorias";
-            this.CMBCategorias.Size = new System.Drawing.Size(314, 21);
+            this.CMBCategorias.Size = new System.Drawing.Size(314, 24);
             this.CMBCategorias.TabIndex = 1;
             this.CMBCategorias.SelectedIndexChanged += new System.EventHandler(this.CMBCategorias_SelectedIndexChanged);
             // 
-            // lblidcategoria
+            // txtCategoria
             // 
-            this.lblidcategoria.AutoSize = true;
-            this.lblidcategoria.Location = new System.Drawing.Point(46, 25);
-            this.lblidcategoria.Name = "lblidcategoria";
-            this.lblidcategoria.Size = new System.Drawing.Size(18, 13);
-            this.lblidcategoria.TabIndex = 2;
-            this.lblidcategoria.Text = "ID";
+            this.txtCategoria.Location = new System.Drawing.Point(89, 20);
+            this.txtCategoria.Name = "txtCategoria";
+            this.txtCategoria.Size = new System.Drawing.Size(270, 23);
+            this.txtCategoria.TabIndex = 0;
             // 
             // FrmCategoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(592, 302);
+            this.ClientSize = new System.Drawing.Size(592, 276);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmCategoria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Categorias de Productos";
             this.Load += new System.EventHandler(this.FrmCategoria_Load);
             this.panel1.ResumeLayout(false);

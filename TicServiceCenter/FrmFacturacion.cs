@@ -81,7 +81,14 @@ namespace TicServiceCenter
         {
             FrmRegistroDeUsuario FrmR = new FrmRegistroDeUsuario();
             FrmR.Show();
-            this.Close();
+           
+        }
+
+        private void historialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmHistorial FrmH = new FrmHistorial();
+            FrmH.Show();
+            
         }
     }
 }

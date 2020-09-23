@@ -51,7 +51,7 @@
             this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsuario.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.txtUsuario.ForeColor = System.Drawing.Color.White;
-            this.txtUsuario.Location = new System.Drawing.Point(388, 62);
+            this.txtUsuario.Location = new System.Drawing.Point(372, 95);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(276, 16);
             this.txtUsuario.TabIndex = 18;
@@ -65,7 +65,7 @@
             this.txtConfirmarContraseña.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtConfirmarContraseña.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.txtConfirmarContraseña.ForeColor = System.Drawing.Color.White;
-            this.txtConfirmarContraseña.Location = new System.Drawing.Point(388, 187);
+            this.txtConfirmarContraseña.Location = new System.Drawing.Point(372, 250);
             this.txtConfirmarContraseña.Name = "txtConfirmarContraseña";
             this.txtConfirmarContraseña.Size = new System.Drawing.Size(276, 16);
             this.txtConfirmarContraseña.TabIndex = 23;
@@ -79,7 +79,7 @@
             this.txtNuevaContraseña.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNuevaContraseña.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.txtNuevaContraseña.ForeColor = System.Drawing.Color.White;
-            this.txtNuevaContraseña.Location = new System.Drawing.Point(388, 144);
+            this.txtNuevaContraseña.Location = new System.Drawing.Point(372, 197);
             this.txtNuevaContraseña.Name = "txtNuevaContraseña";
             this.txtNuevaContraseña.Size = new System.Drawing.Size(276, 16);
             this.txtNuevaContraseña.TabIndex = 22;
@@ -93,7 +93,7 @@
             this.txtViejaContraseña.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtViejaContraseña.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.txtViejaContraseña.ForeColor = System.Drawing.Color.White;
-            this.txtViejaContraseña.Location = new System.Drawing.Point(388, 102);
+            this.txtViejaContraseña.Location = new System.Drawing.Point(372, 145);
             this.txtViejaContraseña.Name = "txtViejaContraseña";
             this.txtViejaContraseña.Size = new System.Drawing.Size(276, 16);
             this.txtViejaContraseña.TabIndex = 20;
@@ -107,13 +107,13 @@
             this.panelLogoTic.Controls.Add(this.pictureBoxLogoTic);
             this.panelLogoTic.Location = new System.Drawing.Point(-3, -7);
             this.panelLogoTic.Name = "panelLogoTic";
-            this.panelLogoTic.Size = new System.Drawing.Size(249, 336);
+            this.panelLogoTic.Size = new System.Drawing.Size(249, 422);
             this.panelLogoTic.TabIndex = 27;
             // 
             // pictureBoxLogoTic
             // 
             this.pictureBoxLogoTic.Image = global::TicServiceCenter.Properties.Resources.Logo_Transparente;
-            this.pictureBoxLogoTic.Location = new System.Drawing.Point(3, 77);
+            this.pictureBoxLogoTic.Location = new System.Drawing.Point(3, 109);
             this.pictureBoxLogoTic.Name = "pictureBoxLogoTic";
             this.pictureBoxLogoTic.Size = new System.Drawing.Size(237, 130);
             this.pictureBoxLogoTic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -125,7 +125,7 @@
             this.lblLogin.AutoSize = true;
             this.lblLogin.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogin.ForeColor = System.Drawing.Color.White;
-            this.lblLogin.Location = new System.Drawing.Point(416, 9);
+            this.lblLogin.Location = new System.Drawing.Point(390, 23);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.Size = new System.Drawing.Size(204, 25);
             this.lblLogin.TabIndex = 28;
@@ -134,7 +134,7 @@
             // panelContrasena
             // 
             this.panelContrasena.BackColor = System.Drawing.Color.White;
-            this.panelContrasena.Location = new System.Drawing.Point(388, 120);
+            this.panelContrasena.Location = new System.Drawing.Point(372, 163);
             this.panelContrasena.Name = "panelContrasena";
             this.panelContrasena.Size = new System.Drawing.Size(287, 4);
             this.panelContrasena.TabIndex = 30;
@@ -142,7 +142,7 @@
             // panelUsuario
             // 
             this.panelUsuario.BackColor = System.Drawing.Color.White;
-            this.panelUsuario.Location = new System.Drawing.Point(388, 79);
+            this.panelUsuario.Location = new System.Drawing.Point(372, 112);
             this.panelUsuario.Name = "panelUsuario";
             this.panelUsuario.Size = new System.Drawing.Size(287, 4);
             this.panelUsuario.TabIndex = 29;
@@ -150,7 +150,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(388, 161);
+            this.panel1.Location = new System.Drawing.Point(372, 214);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(287, 4);
             this.panel1.TabIndex = 31;
@@ -158,7 +158,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(388, 208);
+            this.panel2.Location = new System.Drawing.Point(372, 271);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(287, 4);
             this.panel2.TabIndex = 32;
@@ -172,7 +172,7 @@
             this.btnCambiarContrasena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCambiarContrasena.Font = new System.Drawing.Font("Bahnschrift", 12F);
             this.btnCambiarContrasena.ForeColor = System.Drawing.Color.White;
-            this.btnCambiarContrasena.Location = new System.Drawing.Point(388, 228);
+            this.btnCambiarContrasena.Location = new System.Drawing.Point(372, 316);
             this.btnCambiarContrasena.Name = "btnCambiarContrasena";
             this.btnCambiarContrasena.Size = new System.Drawing.Size(287, 42);
             this.btnCambiarContrasena.TabIndex = 9;
@@ -185,7 +185,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(71)))));
-            this.ClientSize = new System.Drawing.Size(728, 302);
+            this.ClientSize = new System.Drawing.Size(728, 404);
             this.Controls.Add(this.btnCambiarContrasena);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -199,6 +199,7 @@
             this.Controls.Add(this.txtViejaContraseña);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmCambiarContraseña";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cambiar Contraseña";
             this.Load += new System.EventHandler(this.FrmCambiarContraseña_Load);
             this.panelLogoTic.ResumeLayout(false);
