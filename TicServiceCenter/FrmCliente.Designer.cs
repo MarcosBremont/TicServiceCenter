@@ -61,14 +61,6 @@
             this.Label4 = new System.Windows.Forms.Label();
             this.txtTelefono = new System.Windows.Forms.MaskedTextBox();
             this.dgvCliente = new System.Windows.Forms.DataGridView();
-            this.txtcantidaddeproductos = new System.Windows.Forms.TextBox();
-            this.txtNoCelular = new System.Windows.Forms.MaskedTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.IDCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreCompleto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -79,6 +71,15 @@
             this.CorreoElectronico = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NCelular = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Notas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtcantidaddeproductos = new System.Windows.Forms.TextBox();
+            this.txtNoCelular = new System.Windows.Forms.MaskedTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.BtnSeleccionar = new System.Windows.Forms.Button();
             this.GroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
             this.SuspendLayout();
@@ -390,7 +391,7 @@
             this.dgvCliente.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvCliente.EnableHeadersVisualStyles = false;
             this.dgvCliente.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvCliente.Location = new System.Drawing.Point(12, 200);
+            this.dgvCliente.Location = new System.Drawing.Point(12, 221);
             this.dgvCliente.MultiSelect = false;
             this.dgvCliente.Name = "dgvCliente";
             this.dgvCliente.ReadOnly = true;
@@ -418,9 +419,84 @@
             this.dgvCliente.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCliente_CellClick);
             this.dgvCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCliente_CellContentClick);
             // 
+            // IDCliente
+            // 
+            this.IDCliente.DataPropertyName = "IDCliente";
+            this.IDCliente.FillWeight = 49.55036F;
+            this.IDCliente.HeaderText = "Codigo";
+            this.IDCliente.Name = "IDCliente";
+            this.IDCliente.ReadOnly = true;
+            // 
+            // NombreCompleto
+            // 
+            this.NombreCompleto.DataPropertyName = "NombreCompleto";
+            this.NombreCompleto.FillWeight = 119.1544F;
+            this.NombreCompleto.HeaderText = "Nombre";
+            this.NombreCompleto.Name = "NombreCompleto";
+            this.NombreCompleto.ReadOnly = true;
+            // 
+            // Direccion
+            // 
+            this.Direccion.DataPropertyName = "Direccion";
+            this.Direccion.FillWeight = 106.4554F;
+            this.Direccion.HeaderText = "Direccion";
+            this.Direccion.Name = "Direccion";
+            this.Direccion.ReadOnly = true;
+            // 
+            // Ciudad
+            // 
+            this.Ciudad.DataPropertyName = "Ciudad";
+            this.Ciudad.FillWeight = 106.4554F;
+            this.Ciudad.HeaderText = "Ciudad";
+            this.Ciudad.Name = "Ciudad";
+            this.Ciudad.ReadOnly = true;
+            // 
+            // Provincia
+            // 
+            this.Provincia.DataPropertyName = "Provincia";
+            this.Provincia.FillWeight = 106.4554F;
+            this.Provincia.HeaderText = "Provincia";
+            this.Provincia.Name = "Provincia";
+            this.Provincia.ReadOnly = true;
+            // 
+            // CodigoPostal
+            // 
+            this.CodigoPostal.DataPropertyName = "CodigoPostal";
+            this.CodigoPostal.HeaderText = "Codigo Postal";
+            this.CodigoPostal.Name = "CodigoPostal";
+            this.CodigoPostal.ReadOnly = true;
+            // 
+            // TELEFONO
+            // 
+            this.TELEFONO.DataPropertyName = "TELEFONO";
+            this.TELEFONO.HeaderText = "Telefono";
+            this.TELEFONO.Name = "TELEFONO";
+            this.TELEFONO.ReadOnly = true;
+            // 
+            // CorreoElectronico
+            // 
+            this.CorreoElectronico.DataPropertyName = "CorreoElectronico";
+            this.CorreoElectronico.HeaderText = "Email";
+            this.CorreoElectronico.Name = "CorreoElectronico";
+            this.CorreoElectronico.ReadOnly = true;
+            // 
+            // NCelular
+            // 
+            this.NCelular.DataPropertyName = "NCelular";
+            this.NCelular.HeaderText = "Celular";
+            this.NCelular.Name = "NCelular";
+            this.NCelular.ReadOnly = true;
+            // 
+            // Notas
+            // 
+            this.Notas.DataPropertyName = "Notas";
+            this.Notas.HeaderText = "Notas";
+            this.Notas.Name = "Notas";
+            this.Notas.ReadOnly = true;
+            // 
             // txtcantidaddeproductos
             // 
-            this.txtcantidaddeproductos.Location = new System.Drawing.Point(12, 454);
+            this.txtcantidaddeproductos.Location = new System.Drawing.Point(12, 475);
             this.txtcantidaddeproductos.Name = "txtcantidaddeproductos";
             this.txtcantidaddeproductos.ReadOnly = true;
             this.txtcantidaddeproductos.Size = new System.Drawing.Size(75, 20);
@@ -506,86 +582,23 @@
             this.label14.TabIndex = 112;
             this.label14.Text = "*";
             // 
-            // IDCliente
+            // BtnSeleccionar
             // 
-            this.IDCliente.DataPropertyName = "IDCliente";
-            this.IDCliente.FillWeight = 49.55036F;
-            this.IDCliente.HeaderText = "Codigo";
-            this.IDCliente.Name = "IDCliente";
-            this.IDCliente.ReadOnly = true;
-            // 
-            // NombreCompleto
-            // 
-            this.NombreCompleto.DataPropertyName = "NombreCompleto";
-            this.NombreCompleto.FillWeight = 119.1544F;
-            this.NombreCompleto.HeaderText = "Nombre";
-            this.NombreCompleto.Name = "NombreCompleto";
-            this.NombreCompleto.ReadOnly = true;
-            // 
-            // Direccion
-            // 
-            this.Direccion.DataPropertyName = "Direccion";
-            this.Direccion.FillWeight = 106.4554F;
-            this.Direccion.HeaderText = "Direccion";
-            this.Direccion.Name = "Direccion";
-            this.Direccion.ReadOnly = true;
-            // 
-            // Ciudad
-            // 
-            this.Ciudad.DataPropertyName = "Ciudad";
-            this.Ciudad.FillWeight = 106.4554F;
-            this.Ciudad.HeaderText = "Ciudad";
-            this.Ciudad.Name = "Ciudad";
-            this.Ciudad.ReadOnly = true;
-            // 
-            // Provincia
-            // 
-            this.Provincia.DataPropertyName = "Provincia";
-            this.Provincia.FillWeight = 106.4554F;
-            this.Provincia.HeaderText = "Provincia";
-            this.Provincia.Name = "Provincia";
-            this.Provincia.ReadOnly = true;
-            // 
-            // CodigoPostal
-            // 
-            this.CodigoPostal.DataPropertyName = "CodigoPostal";
-            this.CodigoPostal.HeaderText = "Codigo Postal";
-            this.CodigoPostal.Name = "CodigoPostal";
-            this.CodigoPostal.ReadOnly = true;
-            // 
-            // TELEFONO
-            // 
-            this.TELEFONO.DataPropertyName = "TELEFONO";
-            this.TELEFONO.HeaderText = "Telefono";
-            this.TELEFONO.Name = "TELEFONO";
-            this.TELEFONO.ReadOnly = true;
-            // 
-            // CorreoElectronico
-            // 
-            this.CorreoElectronico.DataPropertyName = "CorreoElectronico";
-            this.CorreoElectronico.HeaderText = "Email";
-            this.CorreoElectronico.Name = "CorreoElectronico";
-            this.CorreoElectronico.ReadOnly = true;
-            // 
-            // NCelular
-            // 
-            this.NCelular.DataPropertyName = "NCelular";
-            this.NCelular.HeaderText = "Celular";
-            this.NCelular.Name = "NCelular";
-            this.NCelular.ReadOnly = true;
-            // 
-            // Notas
-            // 
-            this.Notas.DataPropertyName = "Notas";
-            this.Notas.HeaderText = "Notas";
-            this.Notas.Name = "Notas";
-            this.Notas.ReadOnly = true;
+            this.BtnSeleccionar.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
+            this.BtnSeleccionar.Location = new System.Drawing.Point(12, 186);
+            this.BtnSeleccionar.Name = "BtnSeleccionar";
+            this.BtnSeleccionar.Size = new System.Drawing.Size(87, 29);
+            this.BtnSeleccionar.TabIndex = 4;
+            this.BtnSeleccionar.Text = "Seleccionar";
+            this.BtnSeleccionar.UseVisualStyleBackColor = true;
+            this.BtnSeleccionar.Click += new System.EventHandler(this.BtnSeleccionar_Click);
             // 
             // FrmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1212, 476);
+            this.ClientSize = new System.Drawing.Size(1212, 505);
+            this.Controls.Add(this.BtnSeleccionar);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label14);
@@ -657,7 +670,6 @@
         internal System.Windows.Forms.TextBox txtIDCliente;
         internal System.Windows.Forms.Label Label4;
         private System.Windows.Forms.MaskedTextBox txtTelefono;
-        private System.Windows.Forms.DataGridView dgvCliente;
         private System.Windows.Forms.TextBox txtcantidaddeproductos;
         private System.Windows.Forms.DataGridViewTextBoxColumn IDCliente;
         private System.Windows.Forms.DataGridViewTextBoxColumn NombreCompleto;
@@ -676,5 +688,7 @@
         internal System.Windows.Forms.Label label12;
         internal System.Windows.Forms.Label label13;
         internal System.Windows.Forms.Label label14;
+        public System.Windows.Forms.DataGridView dgvCliente;
+        internal System.Windows.Forms.Button BtnSeleccionar;
     }
 }

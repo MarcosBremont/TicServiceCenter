@@ -99,5 +99,35 @@ namespace TicServiceCenter
             frms.Show();
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+            {
+            if (dgvInventario.Rows.Count == 0)
+            {
+                return;
+            }
+            else
+            {
+                DialogResult = DialogResult.OK;
+                Close();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataSet ds;
+
+                string cmd = "SELECT * FROM Inventario WHERE NombreProducto LIKE ('%" + txtbuscarpornombredelproducto.Text.Trim() + "%')";
+                ds = Utilidades.Ejecutar(cmd);
+                dgvInventario.DataSource = ds.Tables[0];
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Ha ocurrido un error:" + error.Message);
+            }
+        }
     }
+    
 }

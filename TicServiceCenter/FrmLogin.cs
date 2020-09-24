@@ -99,6 +99,7 @@ namespace TicServiceCenter
                     //Logged in as (Role)
                     frm.Show();
                     frm.lbluser.Text = cbRol.Text;
+                    frm.txtFacturadoPor.Text = cbRol.Text;
 
                     if (cbRol.SelectedItem == "Empleado") frm.usuariosToolStripMenuItem.Visible = false;
 

@@ -163,5 +163,18 @@ namespace TicServiceCenter
 
             this.txtcantidaddeproductos.Text = this.dgvCliente.Rows.Count.ToString("N0");
         }
+
+        private void BtnSeleccionar_Click(object sender, EventArgs e)
+        {
+            if (dgvCliente.Rows.Count == 0)
+            {
+                return;
+            }
+            else
+            {
+                DialogResult = DialogResult.OK;
+                Close();
+            }
+        }
     }
 }
