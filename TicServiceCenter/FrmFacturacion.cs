@@ -34,11 +34,6 @@ namespace TicServiceCenter
             dgvFacturacion.DataSource = tabla;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void verYEditarProductosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmInventario FrmI = new FrmInventario();
@@ -71,7 +66,7 @@ namespace TicServiceCenter
 
         private void btneditar_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void btneliminar_Click(object sender, EventArgs e)
@@ -160,11 +155,30 @@ namespace TicServiceCenter
             {
                 total += Convert.ToDouble(Fila.Cells[4].Value);
             }
-            txtTotal.Text = "$" + total.ToString();
+            txtTotal.Text = "RD$" + total.ToString();
 
             this.txtcantidaddeproductos.Text = this.dgvFacturacion.Rows.Count.ToString("N0");
 
 
+
+        }
+
+       
+
+        public void NuevaFactura()
+        {
+            txtCodigoPro.Text = "";
+            txtSeleccionarCLiente.Text = "";
+            txtCodigoPro.Text = "";
+            txtDescrip.Text = "";
+            txtPrecio.Text = "";
+            txtCantidad.Text = "";
+            txtTotal.Text = "$";
+            dgvFacturacion.Rows.Clear();
+            cont_fila = 0;
+            total = 0;
+            txtcantidaddeproductos.Text = "";
+            txtCodigoPro.Focus();
 
         }
 
@@ -184,6 +198,30 @@ namespace TicServiceCenter
               
             }
 
+        }
+
+        private void btnsalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BtnNueva_Click(object sender, EventArgs e)
+        {
+            NuevaFactura();
+        }
+
+        private void btnEliminar_Click_1(object sender, EventArgs e)
+        {
+            if (cont_fila > 0)
+            {
+                total = total - (Convert.ToDouble(dgvFacturacion.Rows[dgvFacturacion.CurrentRow.Index].Cells[4].Value));
+                txtTotal.Text = "RD$" + total.ToString();
+
+                dgvFacturacion.Rows.RemoveAt(dgvFacturacion.CurrentRow.Index);
+                cont_fila--;
+                this.txtcantidaddeproductos.Text = this.dgvFacturacion.Rows.Count.ToString("N0");
+
+            }
         }
     }
 }
