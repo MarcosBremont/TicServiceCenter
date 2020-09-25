@@ -40,8 +40,6 @@
             this.GBBuscarPorCodigo = new System.Windows.Forms.GroupBox();
             this.txtbuscarporcodigo = new System.Windows.Forms.TextBox();
             this.dgvInventario = new System.Windows.Forms.DataGridView();
-            this.btneditar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.IDInventario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CategoriaProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,6 +47,8 @@
             this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaDeAgregado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btneditar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.GBBuscarPorNombre.SuspendLayout();
             this.GBBuscarPorCategoria.SuspendLayout();
             this.GBBuscarPorCodigo.SuspendLayout();
@@ -90,7 +90,7 @@
             this.txtbuscarporcategoria.Location = new System.Drawing.Point(10, 36);
             this.txtbuscarporcategoria.Name = "txtbuscarporcategoria";
             this.txtbuscarporcategoria.Size = new System.Drawing.Size(184, 20);
-            this.txtbuscarporcategoria.TabIndex = 1;
+            this.txtbuscarporcategoria.TabIndex = 0;
             this.txtbuscarporcategoria.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtbuscarporcategoria_KeyUp);
             // 
             // GBBuscarPorCodigo
@@ -108,7 +108,7 @@
             this.txtbuscarporcodigo.Location = new System.Drawing.Point(6, 36);
             this.txtbuscarporcodigo.Name = "txtbuscarporcodigo";
             this.txtbuscarporcodigo.Size = new System.Drawing.Size(184, 20);
-            this.txtbuscarporcodigo.TabIndex = 2;
+            this.txtbuscarporcodigo.TabIndex = 0;
             this.txtbuscarporcodigo.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtbuscarporcodigo_KeyUp);
             // 
             // dgvInventario
@@ -178,28 +178,6 @@
             this.dgvInventario.Size = new System.Drawing.Size(1046, 330);
             this.dgvInventario.TabIndex = 78;
             // 
-            // btneditar
-            // 
-            this.btneditar.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
-            this.btneditar.Location = new System.Drawing.Point(2, 126);
-            this.btneditar.Name = "btneditar";
-            this.btneditar.Size = new System.Drawing.Size(90, 33);
-            this.btneditar.TabIndex = 79;
-            this.btneditar.Text = "Editar";
-            this.btneditar.UseVisualStyleBackColor = true;
-            this.btneditar.Click += new System.EventHandler(this.btneditar_Click);
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
-            this.button1.Location = new System.Drawing.Point(2, 87);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 33);
-            this.button1.TabIndex = 80;
-            this.button1.Text = "Seleccionar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // IDInventario
             // 
             this.IDInventario.DataPropertyName = "IDInventario";
@@ -250,6 +228,28 @@
             this.FechaDeAgregado.HeaderText = "FechaDeAgregado";
             this.FechaDeAgregado.Name = "FechaDeAgregado";
             this.FechaDeAgregado.ReadOnly = true;
+            // 
+            // btneditar
+            // 
+            this.btneditar.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
+            this.btneditar.Location = new System.Drawing.Point(2, 126);
+            this.btneditar.Name = "btneditar";
+            this.btneditar.Size = new System.Drawing.Size(90, 33);
+            this.btneditar.TabIndex = 1;
+            this.btneditar.Text = "Editar";
+            this.btneditar.UseVisualStyleBackColor = true;
+            this.btneditar.Click += new System.EventHandler(this.btneditar_Click);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
+            this.button1.Location = new System.Drawing.Point(2, 87);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(90, 33);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Seleccionar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmInventario
             // 

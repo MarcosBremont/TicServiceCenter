@@ -54,7 +54,7 @@
             this.txtUsuario.Location = new System.Drawing.Point(372, 95);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(276, 16);
-            this.txtUsuario.TabIndex = 18;
+            this.txtUsuario.TabIndex = 0;
             this.txtUsuario.Text = "Usuario";
             this.txtUsuario.Enter += new System.EventHandler(this.txtUsuario_Enter);
             this.txtUsuario.Leave += new System.EventHandler(this.txtUsuario_Leave);
@@ -68,7 +68,7 @@
             this.txtConfirmarContraseña.Location = new System.Drawing.Point(372, 250);
             this.txtConfirmarContraseña.Name = "txtConfirmarContraseña";
             this.txtConfirmarContraseña.Size = new System.Drawing.Size(276, 16);
-            this.txtConfirmarContraseña.TabIndex = 23;
+            this.txtConfirmarContraseña.TabIndex = 3;
             this.txtConfirmarContraseña.Text = "Confirmar Contraseña";
             this.txtConfirmarContraseña.Enter += new System.EventHandler(this.txtConfirmarContraseña_Enter);
             this.txtConfirmarContraseña.Leave += new System.EventHandler(this.txtConfirmarContraseña_Leave);
@@ -82,7 +82,7 @@
             this.txtNuevaContraseña.Location = new System.Drawing.Point(372, 197);
             this.txtNuevaContraseña.Name = "txtNuevaContraseña";
             this.txtNuevaContraseña.Size = new System.Drawing.Size(276, 16);
-            this.txtNuevaContraseña.TabIndex = 22;
+            this.txtNuevaContraseña.TabIndex = 2;
             this.txtNuevaContraseña.Text = "Nueva Contraseña";
             this.txtNuevaContraseña.Enter += new System.EventHandler(this.txtNuevaContraseña_Enter);
             this.txtNuevaContraseña.Leave += new System.EventHandler(this.txtNuevaContraseña_Leave);
@@ -96,7 +96,7 @@
             this.txtViejaContraseña.Location = new System.Drawing.Point(372, 145);
             this.txtViejaContraseña.Name = "txtViejaContraseña";
             this.txtViejaContraseña.Size = new System.Drawing.Size(276, 16);
-            this.txtViejaContraseña.TabIndex = 20;
+            this.txtViejaContraseña.TabIndex = 1;
             this.txtViejaContraseña.Text = "Contraseña Actual";
             this.txtViejaContraseña.Enter += new System.EventHandler(this.txtViejaContraseña_Enter);
             this.txtViejaContraseña.Leave += new System.EventHandler(this.txtViejaContraseña_Leave);
@@ -175,7 +175,7 @@
             this.btnCambiarContrasena.Location = new System.Drawing.Point(372, 316);
             this.btnCambiarContrasena.Name = "btnCambiarContrasena";
             this.btnCambiarContrasena.Size = new System.Drawing.Size(287, 42);
-            this.btnCambiarContrasena.TabIndex = 9;
+            this.btnCambiarContrasena.TabIndex = 4;
             this.btnCambiarContrasena.Text = "Cambiar Contraseña";
             this.btnCambiarContrasena.UseVisualStyleBackColor = false;
             this.btnCambiarContrasena.Click += new System.EventHandler(this.btnCambiarContrasena_Click);

@@ -43,7 +43,7 @@
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(336, 24);
-            this.txtEmail.TabIndex = 15;
+            this.txtEmail.TabIndex = 0;
             // 
             // label1
             // 
@@ -67,7 +67,7 @@
             this.BtnEnviar.Location = new System.Drawing.Point(395, 80);
             this.BtnEnviar.Name = "BtnEnviar";
             this.BtnEnviar.Size = new System.Drawing.Size(99, 33);
-            this.BtnEnviar.TabIndex = 16;
+            this.BtnEnviar.TabIndex = 1;
             this.BtnEnviar.Text = "Enviar";
             this.BtnEnviar.UseVisualStyleBackColor = true;
             this.BtnEnviar.Click += new System.EventHandler(this.BtnEnviar_Click);
