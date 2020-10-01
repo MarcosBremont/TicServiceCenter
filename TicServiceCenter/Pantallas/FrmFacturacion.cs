@@ -271,34 +271,28 @@ namespace TicServiceCenter
             }
         }
 
-        private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
-        {
-
-            ////Codigo utilizado para el boton de imprimir, donde usamos el objeto printpage
-            //int y = 20;
-            //Image img = Image.FromStream(imagen);
-            //e.Graphics.DrawImage(img, new Rectangle(0, y += 20, 50, 100));
-            //Bitmap objBmp = new Bitmap(this.dgvFacturacion.Width, this.dgvFacturacion.Height);
-            //dgvFacturacion.DrawToBitmap(objBmp, new Rectangle(0, 0, this.dgvFacturacion.Width, this.dgvFacturacion.Height));
-            //e.Graphics.DrawImage(objBmp, 10, 20,150, 50);
-            //e.Graphics.DrawString(lblnombreproducto.Text, new Font("Verdana", 22, FontStyle.Bold), Brushes.Black, new Point(65, 30));
-        }
+       
         private void btneliminar_Click(object sender, EventArgs e)
         {
-            printDocument1 = new PrintDocument();
-            PrinterSettings ps = new PrinterSettings();
-            printDocument1.PrinterSettings = ps;
-            printDocument1.PrintPage += Imprimir;
-            printDocument1.Print();
+            
         }
 
-        private void Imprimir(object sender, PrintPageEventArgs e)
+
+        private void btnImprimir_Click(object sender, EventArgs e)
         {
-            Font font = new Font("Arial", 14);
-            int ancho = 150;
-            int y = 20;
-            e.Graphics.DrawString("---Punto de Venta ---", font, Brushes.Black, new RectangleF(0, y + 20, ancho, 20));
-
+            FrmReporte FrmR = new FrmReporte();
+            FrmR.Show();
+            string s = "SELECT * FROM facturacion";
+            MySqlCommand cmd = new MySqlCommand(s, con);
+            MySqlDataAdapter adap = new MySqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            adap.Fill(ds, "facturacion");
+            Reportes.CrystalReport1 cr1 = new Reportes.CrystalReport1();
+            cr1.SetDataSource(ds);
+            FrmR.crystalReportViewer1.ReportSource = cr1;
+            FrmR.crystalReportViewer1.Refresh();
+            con.Close();
         }
+          
     }
 }
