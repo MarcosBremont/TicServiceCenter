@@ -152,7 +152,6 @@
             // 
             // cbRol
             // 
-            this.cbRol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbRol.FormattingEnabled = true;
             this.cbRol.Items.AddRange(new object[] {
             "Admin",
@@ -161,6 +160,7 @@
             this.cbRol.Name = "cbRol";
             this.cbRol.Size = new System.Drawing.Size(167, 24);
             this.cbRol.TabIndex = 0;
+            this.cbRol.Text = "Seleccione un rol";
             // 
             // label2
             // 

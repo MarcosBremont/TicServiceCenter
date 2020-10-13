@@ -644,10 +644,6 @@
             this.BtnColocar.UseVisualStyleBackColor = true;
             this.BtnColocar.Click += new System.EventHandler(this.BtnColocar_Click);
             // 
-            // printDocument1
-            // 
-           
-            // 
             // printPreviewDialog1
             // 
             this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
@@ -722,7 +718,6 @@
         private System.Windows.Forms.Button btnImprimir;
         private System.Windows.Forms.Button btnguardar;
         private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.DataGridView dgvFacturacion;
         private System.Windows.Forms.GroupBox GBBuscarPorNombre;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label8;
@@ -764,5 +759,6 @@
         public System.Windows.Forms.TextBox txtFacturadoPor;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        public System.Windows.Forms.DataGridView dgvFacturacion;
     }
 }

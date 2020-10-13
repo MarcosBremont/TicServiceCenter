@@ -41,6 +41,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnCambiarContrasena = new System.Windows.Forms.Button();
+            this.BtnVolverAtras = new System.Windows.Forms.Button();
             this.panelLogoTic.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogoTic)).BeginInit();
             this.SuspendLayout();
@@ -172,7 +173,7 @@
             this.btnCambiarContrasena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCambiarContrasena.Font = new System.Drawing.Font("Bahnschrift", 12F);
             this.btnCambiarContrasena.ForeColor = System.Drawing.Color.White;
-            this.btnCambiarContrasena.Location = new System.Drawing.Point(372, 316);
+            this.btnCambiarContrasena.Location = new System.Drawing.Point(372, 304);
             this.btnCambiarContrasena.Name = "btnCambiarContrasena";
             this.btnCambiarContrasena.Size = new System.Drawing.Size(287, 42);
             this.btnCambiarContrasena.TabIndex = 4;
@@ -180,12 +181,29 @@
             this.btnCambiarContrasena.UseVisualStyleBackColor = false;
             this.btnCambiarContrasena.Click += new System.EventHandler(this.btnCambiarContrasena_Click);
             // 
+            // BtnVolverAtras
+            // 
+            this.BtnVolverAtras.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.BtnVolverAtras.FlatAppearance.BorderSize = 2;
+            this.BtnVolverAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnVolverAtras.Font = new System.Drawing.Font("Bahnschrift", 12F);
+            this.BtnVolverAtras.ForeColor = System.Drawing.Color.White;
+            this.BtnVolverAtras.Image = global::TicServiceCenter.Properties.Resources.back2;
+            this.BtnVolverAtras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnVolverAtras.Location = new System.Drawing.Point(372, 354);
+            this.BtnVolverAtras.Name = "BtnVolverAtras";
+            this.BtnVolverAtras.Size = new System.Drawing.Size(287, 43);
+            this.BtnVolverAtras.TabIndex = 33;
+            this.BtnVolverAtras.Text = "Volver Atras";
+            this.BtnVolverAtras.UseVisualStyleBackColor = true;
+            // 
             // FrmCambiarContraseña
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(71)))));
             this.ClientSize = new System.Drawing.Size(728, 404);
+            this.Controls.Add(this.BtnVolverAtras);
             this.Controls.Add(this.btnCambiarContrasena);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -223,5 +241,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnCambiarContrasena;
+        internal System.Windows.Forms.Button BtnVolverAtras;
     }
 }

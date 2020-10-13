@@ -139,7 +139,8 @@ namespace TicServiceCenter
 
         private void FrmLogin_Load(object sender, EventArgs e)
         {
-           
+            cbRol.Focus();
+            cbRol.Text = "Seleccione un rol";
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

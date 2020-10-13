@@ -280,18 +280,7 @@ namespace TicServiceCenter
 
         private void btnImprimir_Click(object sender, EventArgs e)
         {
-            FrmReporte FrmR = new FrmReporte();
-            FrmR.Show();
-            string s = "SELECT * FROM facturacion";
-            MySqlCommand cmd = new MySqlCommand(s, con);
-            MySqlDataAdapter adap = new MySqlDataAdapter(cmd);
-            DataSet ds = new DataSet();
-            adap.Fill(ds, "facturacion");
-            Reportes.CrystalReport1 cr1 = new Reportes.CrystalReport1();
-            cr1.SetDataSource(ds);
-            FrmR.crystalReportViewer1.ReportSource = cr1;
-            FrmR.crystalReportViewer1.Refresh();
-            con.Close();
+            
         }
           
     }
