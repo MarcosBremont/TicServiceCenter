@@ -34,16 +34,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.BtnEnviar = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.BtnVolverAtras = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(41, 86);
+            this.txtEmail.Location = new System.Drawing.Point(44, 75);
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(336, 24);
-            this.txtEmail.TabIndex = 15;
+            this.txtEmail.TabIndex = 0;
             // 
             // label1
             // 
@@ -51,7 +52,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9.75F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(38, 52);
+            this.label1.Location = new System.Drawing.Point(41, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(171, 16);
             this.label1.TabIndex = 17;
@@ -64,13 +65,31 @@
             this.BtnEnviar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEnviar.Font = new System.Drawing.Font("Bahnschrift", 12F);
             this.BtnEnviar.ForeColor = System.Drawing.Color.White;
-            this.BtnEnviar.Location = new System.Drawing.Point(395, 80);
+            this.BtnEnviar.Location = new System.Drawing.Point(398, 69);
             this.BtnEnviar.Name = "BtnEnviar";
             this.BtnEnviar.Size = new System.Drawing.Size(99, 33);
-            this.BtnEnviar.TabIndex = 16;
+            this.BtnEnviar.TabIndex = 1;
             this.BtnEnviar.Text = "Enviar";
             this.BtnEnviar.UseVisualStyleBackColor = true;
             this.BtnEnviar.Click += new System.EventHandler(this.BtnEnviar_Click);
+            // 
+            // BtnVolverAtras
+            // 
+            this.BtnVolverAtras.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.BtnVolverAtras.FlatAppearance.BorderSize = 2;
+            this.BtnVolverAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnVolverAtras.Font = new System.Drawing.Font("Bahnschrift", 12F);
+            this.BtnVolverAtras.ForeColor = System.Drawing.Color.White;
+            this.BtnVolverAtras.Image = global::TicServiceCenter.Properties.Resources.back2;
+            this.BtnVolverAtras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnVolverAtras.Location = new System.Drawing.Point(177, 129);
+            this.BtnVolverAtras.Name = "BtnVolverAtras";
+            this.BtnVolverAtras.Size = new System.Drawing.Size(143, 33);
+            this.BtnVolverAtras.TabIndex = 18;
+            this.BtnVolverAtras.Text = "Volver Atras";
+            this.BtnVolverAtras.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnVolverAtras.UseVisualStyleBackColor = true;
+            this.BtnVolverAtras.Click += new System.EventHandler(this.BtnVolverAtras_Click);
             // 
             // FrmRecuperarContrasena
             // 
@@ -78,6 +97,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(71)))));
             this.ClientSize = new System.Drawing.Size(543, 174);
+            this.Controls.Add(this.BtnVolverAtras);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnEnviar);
@@ -97,5 +117,6 @@
         private System.Windows.Forms.Label label1;
         internal System.Windows.Forms.Button BtnEnviar;
         private System.Windows.Forms.Timer timer1;
+        internal System.Windows.Forms.Button BtnVolverAtras;
     }
 }

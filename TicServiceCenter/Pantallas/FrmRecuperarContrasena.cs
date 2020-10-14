@@ -72,5 +72,12 @@ namespace TicServiceCenter
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void BtnVolverAtras_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FrmLogin frml = new FrmLogin();
+            frml.Show();
+        }
     }
 }

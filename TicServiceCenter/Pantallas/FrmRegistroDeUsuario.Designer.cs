@@ -40,6 +40,7 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCheckAvailability = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtNumeroDeContacto = new System.Windows.Forms.MaskedTextBox();
             this.lblfecha = new System.Windows.Forms.Label();
             this.TXTID = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -63,7 +64,6 @@
             this.NDeContacto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtNumeroDeContacto = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuariosRegistrados)).BeginInit();
@@ -166,6 +166,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detalles de usuario";
             // 
+            // txtNumeroDeContacto
+            // 
+            this.txtNumeroDeContacto.Location = new System.Drawing.Point(513, 33);
+            this.txtNumeroDeContacto.Mask = "(999)000-0000";
+            this.txtNumeroDeContacto.Name = "txtNumeroDeContacto";
+            this.txtNumeroDeContacto.Size = new System.Drawing.Size(100, 23);
+            this.txtNumeroDeContacto.TabIndex = 5;
+            // 
             // lblfecha
             // 
             this.lblfecha.AutoSize = true;
@@ -180,7 +188,7 @@
             this.TXTID.Location = new System.Drawing.Point(138, 33);
             this.TXTID.Name = "TXTID";
             this.TXTID.Size = new System.Drawing.Size(59, 23);
-            this.TXTID.TabIndex = 21;
+            this.TXTID.TabIndex = 0;
             // 
             // label7
             // 
@@ -212,21 +220,21 @@
             this.comboRoles.Location = new System.Drawing.Point(138, 68);
             this.comboRoles.Name = "comboRoles";
             this.comboRoles.Size = new System.Drawing.Size(135, 24);
-            this.comboRoles.TabIndex = 0;
+            this.comboRoles.TabIndex = 1;
             // 
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(513, 75);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(246, 23);
-            this.txtEmail.TabIndex = 4;
+            this.txtEmail.TabIndex = 6;
             // 
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(138, 174);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(246, 23);
-            this.txtNombre.TabIndex = 2;
+            this.txtNombre.TabIndex = 4;
             // 
             // txtContrasena
             // 
@@ -234,7 +242,7 @@
             this.txtContrasena.Name = "txtContrasena";
             this.txtContrasena.PasswordChar = '*';
             this.txtContrasena.Size = new System.Drawing.Size(172, 23);
-            this.txtContrasena.TabIndex = 1;
+            this.txtContrasena.TabIndex = 3;
             // 
             // label6
             // 
@@ -281,7 +289,7 @@
             this.txtUsuario.Location = new System.Drawing.Point(138, 104);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(172, 23);
-            this.txtUsuario.TabIndex = 0;
+            this.txtUsuario.TabIndex = 2;
             // 
             // label2
             // 
@@ -421,14 +429,6 @@
             this.Fecha.HeaderText = "Fecha";
             this.Fecha.Name = "Fecha";
             this.Fecha.ReadOnly = true;
-            // 
-            // txtNumeroDeContacto
-            // 
-            this.txtNumeroDeContacto.Location = new System.Drawing.Point(513, 33);
-            this.txtNumeroDeContacto.Mask = "(999)000-0000";
-            this.txtNumeroDeContacto.Name = "txtNumeroDeContacto";
-            this.txtNumeroDeContacto.Size = new System.Drawing.Size(100, 23);
-            this.txtNumeroDeContacto.TabIndex = 106;
             // 
             // FrmRegistroDeUsuario
             // 

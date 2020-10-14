@@ -8,13 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TicServiceCenter
+namespace TicServiceCenter.Pantallas
 {
-    public partial class Reporte : Form
+    public partial class FrmReporte : Form
     {
-        public Reporte()
+        public FrmReporte()
         {
             InitializeComponent();
+        }
+
+        private void FrmReporte_Load(object sender, EventArgs e)
+        {
+
+           // this.reportViewer1.RefreshReport();
         }
     }
 }

@@ -86,6 +86,8 @@
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.BtnColocar = new System.Windows.Forms.Button();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.GPDetallesdeStock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFacturacion)).BeginInit();
             this.GBBuscarPorNombre.SuspendLayout();
@@ -110,7 +112,7 @@
             this.txtbuscarproducto.Location = new System.Drawing.Point(130, 24);
             this.txtbuscarproducto.Name = "txtbuscarproducto";
             this.txtbuscarproducto.Size = new System.Drawing.Size(151, 20);
-            this.txtbuscarproducto.TabIndex = 13;
+            this.txtbuscarproducto.TabIndex = 0;
             // 
             // GPDetallesdeStock
             // 
@@ -134,7 +136,7 @@
             this.txtFacturadoPor.Name = "txtFacturadoPor";
             this.txtFacturadoPor.ReadOnly = true;
             this.txtFacturadoPor.Size = new System.Drawing.Size(130, 20);
-            this.txtFacturadoPor.TabIndex = 14;
+            this.txtFacturadoPor.TabIndex = 0;
             // 
             // BtnAgregarCliente
             // 
@@ -145,7 +147,7 @@
             this.BtnAgregarCliente.Location = new System.Drawing.Point(284, 65);
             this.BtnAgregarCliente.Name = "BtnAgregarCliente";
             this.BtnAgregarCliente.Size = new System.Drawing.Size(28, 30);
-            this.BtnAgregarCliente.TabIndex = 16;
+            this.BtnAgregarCliente.TabIndex = 5;
             this.BtnAgregarCliente.UseVisualStyleBackColor = true;
             this.BtnAgregarCliente.Click += new System.EventHandler(this.BtnAgregarCliente_Click);
             // 
@@ -184,14 +186,14 @@
             this.txtSeleccionarCLiente.Location = new System.Drawing.Point(150, 70);
             this.txtSeleccionarCLiente.Name = "txtSeleccionarCLiente";
             this.txtSeleccionarCLiente.Size = new System.Drawing.Size(130, 20);
-            this.txtSeleccionarCLiente.TabIndex = 5;
+            this.txtSeleccionarCLiente.TabIndex = 4;
             // 
             // txtclienteTemporal
             // 
             this.txtclienteTemporal.Location = new System.Drawing.Point(150, 106);
             this.txtclienteTemporal.Name = "txtclienteTemporal";
             this.txtclienteTemporal.Size = new System.Drawing.Size(130, 20);
-            this.txtclienteTemporal.TabIndex = 1;
+            this.txtclienteTemporal.TabIndex = 6;
             // 
             // btnsalir
             // 
@@ -199,7 +201,7 @@
             this.btnsalir.Location = new System.Drawing.Point(757, 401);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Size = new System.Drawing.Size(132, 33);
-            this.btnsalir.TabIndex = 18;
+            this.btnsalir.TabIndex = 12;
             this.btnsalir.Text = "Salir";
             this.btnsalir.UseVisualStyleBackColor = true;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
@@ -210,10 +212,10 @@
             this.btnImprimir.Location = new System.Drawing.Point(757, 349);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(132, 33);
-            this.btnImprimir.TabIndex = 17;
+            this.btnImprimir.TabIndex = 10;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.UseVisualStyleBackColor = true;
-            this.btnImprimir.Click += new System.EventHandler(this.btneliminar_Click);
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // btnguardar
             // 
@@ -221,7 +223,7 @@
             this.btnguardar.Location = new System.Drawing.Point(757, 297);
             this.btnguardar.Name = "btnguardar";
             this.btnguardar.Size = new System.Drawing.Size(132, 33);
-            this.btnguardar.TabIndex = 16;
+            this.btnguardar.TabIndex = 9;
             this.btnguardar.Text = "Guardar";
             this.btnguardar.UseVisualStyleBackColor = true;
             // 
@@ -231,7 +233,7 @@
             this.btnEliminar.Location = new System.Drawing.Point(757, 245);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(132, 33);
-            this.btnEliminar.TabIndex = 15;
+            this.btnEliminar.TabIndex = 8;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click_1);
@@ -242,7 +244,7 @@
             this.BtnNueva.Location = new System.Drawing.Point(757, 192);
             this.BtnNueva.Name = "BtnNueva";
             this.BtnNueva.Size = new System.Drawing.Size(132, 33);
-            this.BtnNueva.TabIndex = 23;
+            this.BtnNueva.TabIndex = 7;
             this.BtnNueva.Text = "Nueva";
             this.BtnNueva.UseVisualStyleBackColor = true;
             this.BtnNueva.Click += new System.EventHandler(this.BtnNueva_Click);
@@ -368,7 +370,7 @@
             this.checkBox2.Location = new System.Drawing.Point(175, 26);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(59, 17);
-            this.checkBox2.TabIndex = 18;
+            this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Credito";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
@@ -378,7 +380,7 @@
             this.checkBox1.Location = new System.Drawing.Point(94, 25);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(66, 17);
-            this.checkBox1.TabIndex = 17;
+            this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Contado";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
@@ -412,7 +414,7 @@
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(130, 20);
-            this.txtTotal.TabIndex = 17;
+            this.txtTotal.TabIndex = 1;
             // 
             // txtcantidaddeproductos
             // 
@@ -420,7 +422,7 @@
             this.txtcantidaddeproductos.Name = "txtcantidaddeproductos";
             this.txtcantidaddeproductos.ReadOnly = true;
             this.txtcantidaddeproductos.Size = new System.Drawing.Size(108, 20);
-            this.txtcantidaddeproductos.TabIndex = 13;
+            this.txtcantidaddeproductos.TabIndex = 0;
             // 
             // label8
             // 
@@ -552,7 +554,7 @@
             this.BtnBuscarProductos.Location = new System.Drawing.Point(290, 12);
             this.BtnBuscarProductos.Name = "BtnBuscarProductos";
             this.BtnBuscarProductos.Size = new System.Drawing.Size(73, 43);
-            this.BtnBuscarProductos.TabIndex = 15;
+            this.BtnBuscarProductos.TabIndex = 1;
             this.BtnBuscarProductos.UseVisualStyleBackColor = true;
             this.BtnBuscarProductos.Click += new System.EventHandler(this.BtnBuscarProductos_Click);
             // 
@@ -608,28 +610,28 @@
             this.txtCodigoPro.Location = new System.Drawing.Point(12, 112);
             this.txtCodigoPro.Name = "txtCodigoPro";
             this.txtCodigoPro.Size = new System.Drawing.Size(73, 20);
-            this.txtCodigoPro.TabIndex = 16;
+            this.txtCodigoPro.TabIndex = 0;
             // 
             // txtDescrip
             // 
             this.txtDescrip.Location = new System.Drawing.Point(87, 112);
             this.txtDescrip.Name = "txtDescrip";
             this.txtDescrip.Size = new System.Drawing.Size(160, 20);
-            this.txtDescrip.TabIndex = 90;
+            this.txtDescrip.TabIndex = 1;
             // 
             // txtCantidad
             // 
             this.txtCantidad.Location = new System.Drawing.Point(412, 112);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(182, 20);
-            this.txtCantidad.TabIndex = 92;
+            this.txtCantidad.TabIndex = 3;
             // 
             // txtPrecio
             // 
             this.txtPrecio.Location = new System.Drawing.Point(249, 112);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(162, 20);
-            this.txtPrecio.TabIndex = 91;
+            this.txtPrecio.TabIndex = 2;
             // 
             // BtnColocar
             // 
@@ -637,10 +639,20 @@
             this.BtnColocar.Location = new System.Drawing.Point(595, 111);
             this.BtnColocar.Name = "BtnColocar";
             this.BtnColocar.Size = new System.Drawing.Size(153, 22);
-            this.BtnColocar.TabIndex = 93;
+            this.BtnColocar.TabIndex = 3;
             this.BtnColocar.Text = "Colocar";
             this.BtnColocar.UseVisualStyleBackColor = true;
             this.BtnColocar.Click += new System.EventHandler(this.BtnColocar_Click);
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
             // 
             // FrmFacturacion
             // 
@@ -706,7 +718,6 @@
         private System.Windows.Forms.Button btnImprimir;
         private System.Windows.Forms.Button btnguardar;
         private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.DataGridView dgvFacturacion;
         private System.Windows.Forms.GroupBox GBBuscarPorNombre;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label8;
@@ -746,5 +757,8 @@
         private System.Windows.Forms.TextBox txtcantidaddeproductos;
         private System.Windows.Forms.TextBox txtTotal;
         public System.Windows.Forms.TextBox txtFacturadoPor;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        public System.Windows.Forms.DataGridView dgvFacturacion;
     }
 }

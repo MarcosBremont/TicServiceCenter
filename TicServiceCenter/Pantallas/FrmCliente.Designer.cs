@@ -89,7 +89,7 @@
             this.txtCodigoPostal.Location = new System.Drawing.Point(567, 51);
             this.txtCodigoPostal.Name = "txtCodigoPostal";
             this.txtCodigoPostal.Size = new System.Drawing.Size(100, 20);
-            this.txtCodigoPostal.TabIndex = 83;
+            this.txtCodigoPostal.TabIndex = 5;
             // 
             // GroupBox2
             // 
@@ -165,14 +165,14 @@
             this.txtNotas.Name = "txtNotas";
             this.txtNotas.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txtNotas.Size = new System.Drawing.Size(239, 67);
-            this.txtNotas.TabIndex = 88;
+            this.txtNotas.TabIndex = 9;
             // 
             // txtCorreoElectronico
             // 
             this.txtCorreoElectronico.Location = new System.Drawing.Point(568, 123);
             this.txtCorreoElectronico.Name = "txtCorreoElectronico";
             this.txtCorreoElectronico.Size = new System.Drawing.Size(171, 20);
-            this.txtCorreoElectronico.TabIndex = 85;
+            this.txtCorreoElectronico.TabIndex = 7;
             // 
             // Label23
             // 
@@ -231,7 +231,7 @@
             this.cmbprovincia.Location = new System.Drawing.Point(567, 12);
             this.cmbprovincia.Name = "cmbprovincia";
             this.cmbprovincia.Size = new System.Drawing.Size(172, 21);
-            this.cmbprovincia.TabIndex = 82;
+            this.cmbprovincia.TabIndex = 4;
             this.cmbprovincia.Text = "Seleccione una provincia";
             // 
             // txtCiudad
@@ -239,21 +239,21 @@
             this.txtCiudad.Location = new System.Drawing.Point(148, 153);
             this.txtCiudad.Name = "txtCiudad";
             this.txtCiudad.Size = new System.Drawing.Size(144, 20);
-            this.txtCiudad.TabIndex = 81;
+            this.txtCiudad.TabIndex = 3;
             // 
             // txtReferencia
             // 
             this.txtReferencia.Location = new System.Drawing.Point(148, 118);
             this.txtReferencia.Name = "txtReferencia";
             this.txtReferencia.Size = new System.Drawing.Size(273, 20);
-            this.txtReferencia.TabIndex = 80;
+            this.txtReferencia.TabIndex = 2;
             // 
             // txtDireccion
             // 
             this.txtDireccion.Location = new System.Drawing.Point(148, 87);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(273, 20);
-            this.txtDireccion.TabIndex = 79;
+            this.txtDireccion.TabIndex = 1;
             // 
             // Label9
             // 
@@ -320,7 +320,7 @@
             this.txtNombreCompleto.Location = new System.Drawing.Point(148, 52);
             this.txtNombreCompleto.Name = "txtNombreCompleto";
             this.txtNombreCompleto.Size = new System.Drawing.Size(273, 20);
-            this.txtNombreCompleto.TabIndex = 78;
+            this.txtNombreCompleto.TabIndex = 0;
             // 
             // txtIDCliente
             // 
@@ -346,7 +346,7 @@
             this.txtTelefono.Mask = "(999)000-0000";
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(100, 20);
-            this.txtTelefono.TabIndex = 105;
+            this.txtTelefono.TabIndex = 6;
             // 
             // dgvCliente
             // 
@@ -508,7 +508,7 @@
             this.txtNoCelular.Mask = "(999)000-0000";
             this.txtNoCelular.Name = "txtNoCelular";
             this.txtNoCelular.Size = new System.Drawing.Size(100, 20);
-            this.txtNoCelular.TabIndex = 108;
+            this.txtNoCelular.TabIndex = 8;
             // 
             // label1
             // 
@@ -588,7 +588,7 @@
             this.BtnSeleccionar.Location = new System.Drawing.Point(12, 186);
             this.BtnSeleccionar.Name = "BtnSeleccionar";
             this.BtnSeleccionar.Size = new System.Drawing.Size(87, 29);
-            this.BtnSeleccionar.TabIndex = 4;
+            this.BtnSeleccionar.TabIndex = 10;
             this.BtnSeleccionar.Text = "Seleccionar";
             this.BtnSeleccionar.UseVisualStyleBackColor = true;
             this.BtnSeleccionar.Click += new System.EventHandler(this.BtnSeleccionar_Click);

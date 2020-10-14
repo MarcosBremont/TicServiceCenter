@@ -64,7 +64,7 @@
             this.txtUsuario.Location = new System.Drawing.Point(342, 134);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(282, 16);
-            this.txtUsuario.TabIndex = 2;
+            this.txtUsuario.TabIndex = 1;
             this.txtUsuario.Text = "Usuario";
             this.txtUsuario.Enter += new System.EventHandler(this.txtUsuario_Enter);
             this.txtUsuario.Leave += new System.EventHandler(this.txtUsuario_Leave);
@@ -77,7 +77,7 @@
             this.txtContraseña.Location = new System.Drawing.Point(342, 203);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(282, 16);
-            this.txtContraseña.TabIndex = 3;
+            this.txtContraseña.TabIndex = 2;
             this.txtContraseña.Text = "Contraseña";
             this.txtContraseña.Enter += new System.EventHandler(this.txtContraseña_Enter);
             this.txtContraseña.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContraseña_KeyPress);
@@ -131,7 +131,7 @@
             this.btnIniciar.Location = new System.Drawing.Point(344, 280);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(287, 42);
-            this.btnIniciar.TabIndex = 8;
+            this.btnIniciar.TabIndex = 3;
             this.btnIniciar.Text = "Iniciar";
             this.btnIniciar.UseVisualStyleBackColor = false;
             this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
@@ -145,14 +145,13 @@
             this.linkLabel1.Location = new System.Drawing.Point(342, 343);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(127, 16);
-            this.linkLabel1.TabIndex = 9;
+            this.linkLabel1.TabIndex = 4;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Cambiar Contraseña";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // cbRol
             // 
-            this.cbRol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbRol.FormattingEnabled = true;
             this.cbRol.Items.AddRange(new object[] {
             "Admin",
@@ -160,7 +159,8 @@
             this.cbRol.Location = new System.Drawing.Point(464, 85);
             this.cbRol.Name = "cbRol";
             this.cbRol.Size = new System.Drawing.Size(167, 24);
-            this.cbRol.TabIndex = 24;
+            this.cbRol.TabIndex = 0;
+            this.cbRol.Text = "Seleccione un rol";
             // 
             // label2
             // 
@@ -182,7 +182,7 @@
             this.linkLabel3.Location = new System.Drawing.Point(492, 343);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(139, 16);
-            this.linkLabel3.TabIndex = 26;
+            this.linkLabel3.TabIndex = 5;
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "Recuperar Contraseña";
             this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);

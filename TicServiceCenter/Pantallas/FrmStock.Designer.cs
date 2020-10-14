@@ -55,12 +55,12 @@
             this.GBBuscarPorNombre = new System.Windows.Forms.GroupBox();
             this.txtbuscarpornombredelproducto = new System.Windows.Forms.TextBox();
             this.dgvStock = new System.Windows.Forms.DataGridView();
-            this.txtcantidaddeproductos = new System.Windows.Forms.TextBox();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CategoriaProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IDInventario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CategoriaProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtcantidaddeproductos = new System.Windows.Forms.TextBox();
             this.GPDetallesdeStock.SuspendLayout();
             this.GBBuscarPorNombre.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStock)).BeginInit();
@@ -109,7 +109,7 @@
             this.txtCategoria.Location = new System.Drawing.Point(147, 106);
             this.txtCategoria.Name = "txtCategoria";
             this.txtCategoria.Size = new System.Drawing.Size(240, 20);
-            this.txtCategoria.TabIndex = 19;
+            this.txtCategoria.TabIndex = 1;
             // 
             // btneditar
             // 
@@ -117,7 +117,7 @@
             this.btneditar.Location = new System.Drawing.Point(342, 433);
             this.btneditar.Name = "btneditar";
             this.btneditar.Size = new System.Drawing.Size(90, 33);
-            this.btneditar.TabIndex = 18;
+            this.btneditar.TabIndex = 9;
             this.btneditar.Text = "Actualizar";
             this.btneditar.UseVisualStyleBackColor = true;
             this.btneditar.Click += new System.EventHandler(this.btneditar_Click);
@@ -128,7 +128,7 @@
             this.btneliminar.Location = new System.Drawing.Point(231, 433);
             this.btneliminar.Name = "btneliminar";
             this.btneliminar.Size = new System.Drawing.Size(90, 33);
-            this.btneliminar.TabIndex = 17;
+            this.btneliminar.TabIndex = 8;
             this.btneliminar.Text = "Eliminar";
             this.btneliminar.UseVisualStyleBackColor = true;
             this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
@@ -139,7 +139,7 @@
             this.btnguardar.Location = new System.Drawing.Point(120, 433);
             this.btnguardar.Name = "btnguardar";
             this.btnguardar.Size = new System.Drawing.Size(90, 33);
-            this.btnguardar.TabIndex = 16;
+            this.btnguardar.TabIndex = 7;
             this.btnguardar.Text = "Guardar";
             this.btnguardar.UseVisualStyleBackColor = true;
             this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
@@ -150,7 +150,7 @@
             this.btnnuevo.Location = new System.Drawing.Point(9, 433);
             this.btnnuevo.Name = "btnnuevo";
             this.btnnuevo.Size = new System.Drawing.Size(90, 33);
-            this.btnnuevo.TabIndex = 15;
+            this.btnnuevo.TabIndex = 6;
             this.btnnuevo.Text = "Nuevo";
             this.btnnuevo.UseVisualStyleBackColor = true;
             this.btnnuevo.Click += new System.EventHandler(this.btnnuevo_Click);
@@ -161,7 +161,7 @@
             this.dtpfechastock.Location = new System.Drawing.Point(147, 350);
             this.dtpfechastock.Name = "dtpfechastock";
             this.dtpfechastock.Size = new System.Drawing.Size(98, 20);
-            this.dtpfechastock.TabIndex = 14;
+            this.dtpfechastock.TabIndex = 5;
             // 
             // lblfechastock
             // 
@@ -228,14 +228,14 @@
             this.txtprecio.Location = new System.Drawing.Point(147, 274);
             this.txtprecio.Name = "txtprecio";
             this.txtprecio.Size = new System.Drawing.Size(240, 20);
-            this.txtprecio.TabIndex = 5;
+            this.txtprecio.TabIndex = 3;
             // 
             // txtnombreproducto
             // 
             this.txtnombreproducto.Location = new System.Drawing.Point(147, 68);
             this.txtnombreproducto.Name = "txtnombreproducto";
             this.txtnombreproducto.Size = new System.Drawing.Size(240, 20);
-            this.txtnombreproducto.TabIndex = 3;
+            this.txtnombreproducto.TabIndex = 0;
             // 
             // txtdescripcion
             // 
@@ -250,7 +250,7 @@
             this.txtcantidad.Location = new System.Drawing.Point(147, 312);
             this.txtcantidad.Name = "txtcantidad";
             this.txtcantidad.Size = new System.Drawing.Size(240, 20);
-            this.txtcantidad.TabIndex = 1;
+            this.txtcantidad.TabIndex = 4;
             // 
             // txtidproducto
             // 
@@ -343,37 +343,13 @@
             this.dgvStock.TabIndex = 79;
             this.dgvStock.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStock_CellClick);
             // 
-            // txtcantidaddeproductos
+            // IDInventario
             // 
-            this.txtcantidaddeproductos.Location = new System.Drawing.Point(478, 501);
-            this.txtcantidaddeproductos.Name = "txtcantidaddeproductos";
-            this.txtcantidaddeproductos.ReadOnly = true;
-            this.txtcantidaddeproductos.Size = new System.Drawing.Size(75, 20);
-            this.txtcantidaddeproductos.TabIndex = 1;
-            // 
-            // Precio
-            // 
-            this.Precio.DataPropertyName = "Precio";
-            this.Precio.FillWeight = 106.4554F;
-            this.Precio.HeaderText = "Precio";
-            this.Precio.Name = "Precio";
-            this.Precio.ReadOnly = true;
-            // 
-            // Descripcion
-            // 
-            this.Descripcion.DataPropertyName = "Descripcion";
-            this.Descripcion.FillWeight = 106.4554F;
-            this.Descripcion.HeaderText = "Descripcion";
-            this.Descripcion.Name = "Descripcion";
-            this.Descripcion.ReadOnly = true;
-            // 
-            // CategoriaProducto
-            // 
-            this.CategoriaProducto.DataPropertyName = "CategoriaProducto";
-            this.CategoriaProducto.FillWeight = 106.4554F;
-            this.CategoriaProducto.HeaderText = "Categoria del Producto";
-            this.CategoriaProducto.Name = "CategoriaProducto";
-            this.CategoriaProducto.ReadOnly = true;
+            this.IDInventario.DataPropertyName = "IDInventario";
+            this.IDInventario.FillWeight = 49.55036F;
+            this.IDInventario.HeaderText = "Codigo";
+            this.IDInventario.Name = "IDInventario";
+            this.IDInventario.ReadOnly = true;
             // 
             // NombreProducto
             // 
@@ -383,13 +359,37 @@
             this.NombreProducto.Name = "NombreProducto";
             this.NombreProducto.ReadOnly = true;
             // 
-            // IDInventario
+            // CategoriaProducto
             // 
-            this.IDInventario.DataPropertyName = "IDInventario";
-            this.IDInventario.FillWeight = 49.55036F;
-            this.IDInventario.HeaderText = "Codigo";
-            this.IDInventario.Name = "IDInventario";
-            this.IDInventario.ReadOnly = true;
+            this.CategoriaProducto.DataPropertyName = "CategoriaProducto";
+            this.CategoriaProducto.FillWeight = 106.4554F;
+            this.CategoriaProducto.HeaderText = "Categoria del Producto";
+            this.CategoriaProducto.Name = "CategoriaProducto";
+            this.CategoriaProducto.ReadOnly = true;
+            // 
+            // Descripcion
+            // 
+            this.Descripcion.DataPropertyName = "Descripcion";
+            this.Descripcion.FillWeight = 106.4554F;
+            this.Descripcion.HeaderText = "Descripcion";
+            this.Descripcion.Name = "Descripcion";
+            this.Descripcion.ReadOnly = true;
+            // 
+            // Precio
+            // 
+            this.Precio.DataPropertyName = "Precio";
+            this.Precio.FillWeight = 106.4554F;
+            this.Precio.HeaderText = "Precio";
+            this.Precio.Name = "Precio";
+            this.Precio.ReadOnly = true;
+            // 
+            // txtcantidaddeproductos
+            // 
+            this.txtcantidaddeproductos.Location = new System.Drawing.Point(478, 501);
+            this.txtcantidaddeproductos.Name = "txtcantidaddeproductos";
+            this.txtcantidaddeproductos.ReadOnly = true;
+            this.txtcantidaddeproductos.Size = new System.Drawing.Size(75, 20);
+            this.txtcantidaddeproductos.TabIndex = 1;
             // 
             // FrmStock
             // 

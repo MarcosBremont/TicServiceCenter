@@ -41,6 +41,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnCambiarContrasena = new System.Windows.Forms.Button();
+            this.BtnVolverAtras = new System.Windows.Forms.Button();
             this.panelLogoTic.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogoTic)).BeginInit();
             this.SuspendLayout();
@@ -54,7 +55,7 @@
             this.txtUsuario.Location = new System.Drawing.Point(372, 95);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(276, 16);
-            this.txtUsuario.TabIndex = 18;
+            this.txtUsuario.TabIndex = 0;
             this.txtUsuario.Text = "Usuario";
             this.txtUsuario.Enter += new System.EventHandler(this.txtUsuario_Enter);
             this.txtUsuario.Leave += new System.EventHandler(this.txtUsuario_Leave);
@@ -68,7 +69,7 @@
             this.txtConfirmarContraseña.Location = new System.Drawing.Point(372, 250);
             this.txtConfirmarContraseña.Name = "txtConfirmarContraseña";
             this.txtConfirmarContraseña.Size = new System.Drawing.Size(276, 16);
-            this.txtConfirmarContraseña.TabIndex = 23;
+            this.txtConfirmarContraseña.TabIndex = 3;
             this.txtConfirmarContraseña.Text = "Confirmar Contraseña";
             this.txtConfirmarContraseña.Enter += new System.EventHandler(this.txtConfirmarContraseña_Enter);
             this.txtConfirmarContraseña.Leave += new System.EventHandler(this.txtConfirmarContraseña_Leave);
@@ -82,7 +83,7 @@
             this.txtNuevaContraseña.Location = new System.Drawing.Point(372, 197);
             this.txtNuevaContraseña.Name = "txtNuevaContraseña";
             this.txtNuevaContraseña.Size = new System.Drawing.Size(276, 16);
-            this.txtNuevaContraseña.TabIndex = 22;
+            this.txtNuevaContraseña.TabIndex = 2;
             this.txtNuevaContraseña.Text = "Nueva Contraseña";
             this.txtNuevaContraseña.Enter += new System.EventHandler(this.txtNuevaContraseña_Enter);
             this.txtNuevaContraseña.Leave += new System.EventHandler(this.txtNuevaContraseña_Leave);
@@ -96,7 +97,7 @@
             this.txtViejaContraseña.Location = new System.Drawing.Point(372, 145);
             this.txtViejaContraseña.Name = "txtViejaContraseña";
             this.txtViejaContraseña.Size = new System.Drawing.Size(276, 16);
-            this.txtViejaContraseña.TabIndex = 20;
+            this.txtViejaContraseña.TabIndex = 1;
             this.txtViejaContraseña.Text = "Contraseña Actual";
             this.txtViejaContraseña.Enter += new System.EventHandler(this.txtViejaContraseña_Enter);
             this.txtViejaContraseña.Leave += new System.EventHandler(this.txtViejaContraseña_Leave);
@@ -172,13 +173,29 @@
             this.btnCambiarContrasena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCambiarContrasena.Font = new System.Drawing.Font("Bahnschrift", 12F);
             this.btnCambiarContrasena.ForeColor = System.Drawing.Color.White;
-            this.btnCambiarContrasena.Location = new System.Drawing.Point(372, 316);
+            this.btnCambiarContrasena.Location = new System.Drawing.Point(372, 304);
             this.btnCambiarContrasena.Name = "btnCambiarContrasena";
             this.btnCambiarContrasena.Size = new System.Drawing.Size(287, 42);
-            this.btnCambiarContrasena.TabIndex = 9;
+            this.btnCambiarContrasena.TabIndex = 4;
             this.btnCambiarContrasena.Text = "Cambiar Contraseña";
             this.btnCambiarContrasena.UseVisualStyleBackColor = false;
             this.btnCambiarContrasena.Click += new System.EventHandler(this.btnCambiarContrasena_Click);
+            // 
+            // BtnVolverAtras
+            // 
+            this.BtnVolverAtras.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.BtnVolverAtras.FlatAppearance.BorderSize = 2;
+            this.BtnVolverAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnVolverAtras.Font = new System.Drawing.Font("Bahnschrift", 12F);
+            this.BtnVolverAtras.ForeColor = System.Drawing.Color.White;
+            this.BtnVolverAtras.Image = global::TicServiceCenter.Properties.Resources.back2;
+            this.BtnVolverAtras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnVolverAtras.Location = new System.Drawing.Point(372, 354);
+            this.BtnVolverAtras.Name = "BtnVolverAtras";
+            this.BtnVolverAtras.Size = new System.Drawing.Size(287, 43);
+            this.BtnVolverAtras.TabIndex = 33;
+            this.BtnVolverAtras.Text = "Volver Atras";
+            this.BtnVolverAtras.UseVisualStyleBackColor = true;
             // 
             // FrmCambiarContraseña
             // 
@@ -186,6 +203,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(51)))), ((int)(((byte)(71)))));
             this.ClientSize = new System.Drawing.Size(728, 404);
+            this.Controls.Add(this.BtnVolverAtras);
             this.Controls.Add(this.btnCambiarContrasena);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -223,5 +241,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnCambiarContrasena;
+        internal System.Windows.Forms.Button BtnVolverAtras;
     }
 }

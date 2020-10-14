@@ -42,5 +42,16 @@ namespace TicServiceCenter.Properties {
                 return ((string)(this["ticservicecenterConnectionString1"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;password=1234;persistsecurityinfo=True;database=tic" +
+            "servicecenter")]
+        public string ticservicecenterConnectionString2 {
+            get {
+                return ((string)(this["ticservicecenterConnectionString2"]));
+            }
+        }
     }
 }
