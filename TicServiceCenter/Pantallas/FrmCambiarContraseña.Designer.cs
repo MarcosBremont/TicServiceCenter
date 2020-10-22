@@ -196,6 +196,7 @@
             this.BtnVolverAtras.TabIndex = 33;
             this.BtnVolverAtras.Text = "Volver Atras";
             this.BtnVolverAtras.UseVisualStyleBackColor = true;
+            this.BtnVolverAtras.Click += new System.EventHandler(this.BtnVolverAtras_Click);
             // 
             // FrmCambiarContraseña
             // 
