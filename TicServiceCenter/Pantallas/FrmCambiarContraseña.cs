@@ -194,5 +194,12 @@ namespace TicServiceCenter
                 txtConfirmarContraseña.ForeColor = Color.White;
             }
         }
+
+        private void BtnVolverAtras_Click(object sender, EventArgs e)
+        {
+            FrmLogin frml = new FrmLogin();
+            frml.Show();
+            this.Hide();
+        }
     }
 }
